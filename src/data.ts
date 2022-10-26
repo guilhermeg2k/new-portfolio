@@ -27,6 +27,27 @@ export const tools = [
     title: 'NextJS',
     iconURL: 'https://cdn.worldvectorlogo.com/logos/next-js.svg',
   },
+  {
+    title: 'Figma',
+    iconURL:
+      'https://i.pinimg.com/originals/66/8c/cc/668cccb3f734f342e07c0185e6d9a975.png',
+  },
+  {
+    title: 'Git',
+    iconURL: 'https://cdn.worldvectorlogo.com/logos/git-icon.svg',
+  },
+  {
+    title: 'Fedora Linux',
+    iconURL: 'https://cdn.worldvectorlogo.com/logos/fedora-1.svg',
+  },
+  {
+    title: 'NodeJS',
+    iconURL: 'https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg',
+  },
+  {
+    title: 'VSOCDE',
+    iconURL: 'https://cdn.worldvectorlogo.com/logos/visual-studio-code-1.svg',
+  },
 ];
 
 export const projects = [
@@ -35,7 +56,7 @@ export const projects = [
     description:
       'Anilib its a local anime streaming platform, that uses AniList API as anime data source',
     tags: [
-      { title: 'TS', bgColor: 'bg-blue-600' },
+      { title: 'TS', bgColor: 'bg-orange-400' },
       { title: 'REACT', bgColor: 'bg-blue-400' },
       { title: 'NEXTJS', bgColor: 'bg-neutral-600' },
       { title: 'TAILWINDCSS', bgColor: 'bg-blue-500' },
@@ -116,5 +137,45 @@ export const projects = [
       { title: 'NEXTJS', bgColor: 'bg-neutral-600' },
       { title: 'SCSS', bgColor: 'bg-pink-600' },
     ],
+  },
+];
+
+export const works = [
+  {
+    company: 'Cyan Agroanalytics',
+    position: 'React Front-End Developer',
+    dateRange: 'Oct. 2021 - Currently',
+    description:
+      'Desenvolvimento e otimização de interfaces, dashboards e \
+    ferramentas de acompanhamento para uma plataforma de \
+    inteligência geoclimática utilizando principalmente as \
+    tecnologias Javascript, React, Open Layers, Material-UI, Jest e Enzyme',
+  },
+  {
+    company: 'Tribunal de Contas da União (TCU)',
+    position: 'Estagiário',
+    dateRange: 'Jan. 2020 - Oct. 2021',
+    description:
+      'Desenvolvimento e manutenção de aplicações APEX, utilizando principalmente as tecnologias \
+      PLSQL, HTML, CSS, Javascript e jQuery.',
+  },
+];
+
+export const contacts = [
+  {
+    title: 'Linkedin',
+    iconURL: 'https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg',
+  },
+  {
+    title: 'Github',
+    iconURL: 'https://cdn.worldvectorlogo.com/logos/github-icon-1.svg',
+  },
+  {
+    title: 'Gmail',
+    iconURL: 'https://cdn.worldvectorlogo.com/logos/gmail-icon.svg',
+  },
+  {
+    title: 'My Resume',
+    iconURL: 'https://cdn.worldvectorlogo.com/logos/doc-icon-2000-03-.svg',
   },
 ];
