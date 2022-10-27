@@ -1,9 +1,12 @@
-import { ReactNode } from 'react';
+import { ReactNode, useState } from 'react';
+import Badge from './components/Badge';
 import ContactCard from './components/ContactCard';
+import Modal from './components/Modal';
 import ProjectCard from './components/ProjectCard';
+import ProjectModal from './components/ProjectModal';
 import ToolCard from './components/ToolCard';
 import WorkExperienceCard from './components/WorkExperienceCard';
-import { contacts, projects, tools, works } from './data';
+import { contacts, projects, techs, works } from './data';
 
 const SectionTitle = ({ children }: { children: ReactNode }) => {
   return (
@@ -18,8 +21,21 @@ const Section = ({ children }: { children: ReactNode }) => {
 };
 
 const App = () => {
+  const [isProjectModalOpen, setIsProjectModalOpen] = useState(false);
+  const [currentProjectId, setCurrentProjectId] = useState(1);
+
+  const onProjectClickHandler = (id: number) => {
+    setCurrentProjectId(id);
+    setIsProjectModalOpen(true);
+  };
+
   return (
     <div className="h-full w-full bg-stone-900 text-orange-100">
+      <ProjectModal
+        open={isProjectModalOpen}
+        onClose={() => setIsProjectModalOpen(false)}
+        projectId={currentProjectId}
+      />
       <main className="mx-auto  flex max-w-4xl flex-col gap-10 px-4 py-10 md:gap-16 md:pt-20 lg:pt-36">
         <Section>
           <SectionTitle>Hi, I'm Guilherme </SectionTitle>
@@ -32,11 +48,12 @@ const App = () => {
         <Section>
           <SectionTitle>Some of my Projects</SectionTitle>
           <ul className="grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-10">
-            {projects.map(({ title, description, tags }) => (
+            {projects.map(({ id, title, description, tags }) => (
               <ProjectCard
                 title={title}
                 description={description}
                 tags={tags}
+                onClick={() => onProjectClickHandler(id)}
               />
             ))}
           </ul>
@@ -59,7 +76,7 @@ const App = () => {
         <Section>
           <SectionTitle>My Favorite Techs </SectionTitle>
           <ul className="grid grid-cols-2 gap-y-3 gap-x-10 md:grid-cols-3">
-            {tools.map(({ title, iconURL }) => (
+            {techs.map(({ title, iconURL }) => (
               <ToolCard title={title} iconURL={iconURL} />
             ))}
           </ul>

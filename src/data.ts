@@ -1,4 +1,4 @@
-export const tools = [
+export const techs = [
   {
     title: 'Typescript',
     iconURL: 'https://cdn.worldvectorlogo.com/logos/typescript.svg',
@@ -45,13 +45,14 @@ export const tools = [
     iconURL: 'https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg',
   },
   {
-    title: 'VSOCDE',
+    title: 'VSCODE',
     iconURL: 'https://cdn.worldvectorlogo.com/logos/visual-studio-code-1.svg',
   },
 ];
 
 export const projects = [
   {
+    id: 1,
     title: 'Anilib',
     description:
       'Anilib its a local anime streaming platform, that uses AniList API as anime data source',
@@ -65,8 +66,20 @@ export const projects = [
       { title: 'Anilist API', bgColor: 'bg-blue-700' },
       { title: 'FFmpeg', bgColor: 'bg-emerald-700' },
     ],
+    screenshots: [
+      './public/assets/images/screenshoots/anilib/anilib-1.png',
+      './public/assets/images/screenshoots/anilib/anilib-2.png',
+      './public/assets/images/screenshoots/anilib/anilib-3.png',
+      './public/assets/images/screenshoots/anilib/anilib-4.png',
+      './public/assets/images/screenshoots/anilib/anilib-5.png',
+      './public/assets/images/screenshoots/anilib/anilib-6.png',
+      './public/assets/images/screenshoots/anilib/anilib-7.png',
+      './public/assets/images/screenshoots/anilib/anilib-8.png',
+      './public/assets/images/screenshoots/anilib/anilib-9.png',
+    ],
   },
   {
+    id: 2,
     title: 'Anipool',
     description:
       'Anilib its a local anime streaming platform, that uses AniList API as anime data source',
@@ -83,6 +96,7 @@ export const projects = [
     ],
   },
   {
+    id: 3,
     title: 'Neofy',
     description:
       "Neofy it's a Spotify client alternative that is on its very early stage",
@@ -96,6 +110,7 @@ export const projects = [
     ],
   },
   {
+    id: 4,
     title: 'Mercury',
     description: 'Mercury',
     tags: [
@@ -108,8 +123,10 @@ export const projects = [
       { title: 'SQLITE', bgColor: 'bg-sky-500' },
       { title: 'KnexJS', bgColor: 'bg-orange-500' },
     ],
+    screenshots: [],
   },
   {
+    id: 5,
     title: 'Spotify Landing Clone',
     description: 'This its a clone of the Spotify website',
     tags: [
@@ -120,6 +137,7 @@ export const projects = [
     ],
   },
   {
+    id: 6,
     title: 'hltv clone',
     description: 'This its a clone of the HLTV.org desktop homepage',
     tags: [
@@ -129,6 +147,7 @@ export const projects = [
     ],
   },
   {
+    id: 7,
     title: 'Blog template',
     description: 'This its a clone of the HLTV.org desktop homepage',
     tags: [
