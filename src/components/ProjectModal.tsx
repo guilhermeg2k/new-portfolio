@@ -47,8 +47,10 @@ const ProjectModal = ({ open, onClose, projectId }: ProjectModalProps) => {
           </div>
         </button>
         <div className="flex flex-wrap gap-2">
-          {tags.map((tag) => (
-            <Badge bgColor={tag.bgColor}>{tag.title}</Badge>
+          {tags.map(({ title, bgColor }) => (
+            <Badge key={title} bgColor={bgColor}>
+              {title}
+            </Badge>
           ))}
         </div>
         <div>

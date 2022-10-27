@@ -23,8 +23,10 @@ const ProjectCard = ({
           {title}
         </h2>
         <div className="flex flex-wrap gap-2">
-          {tags.map((tag) => (
-            <Badge bgColor={tag.bgColor}>{tag.title}</Badge>
+          {tags.map(({ bgColor, title }) => (
+            <Badge key={title} bgColor={bgColor}>
+              {title}
+            </Badge>
           ))}
         </div>
       </div>

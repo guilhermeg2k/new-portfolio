@@ -49,6 +49,7 @@ const App = () => {
           <ul className="grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-10">
             {projects.map(({ id, title, description, tags }) => (
               <ProjectCard
+                key={id}
                 title={title}
                 description={description}
                 tags={tags}
@@ -63,6 +64,7 @@ const App = () => {
           <ul className="grid grid-cols-1 gap-10 md:grid-cols-2">
             {works.map(({ position, description, company, dateRange }) => (
               <WorkExperienceCard
+                key={position + company}
                 position={position}
                 company={company}
                 description={description}
@@ -76,7 +78,7 @@ const App = () => {
           <SectionTitle>My Favorite Techs </SectionTitle>
           <ul className="grid grid-cols-2 gap-y-3 gap-x-10 md:grid-cols-3">
             {techs.map(({ title, iconURL }) => (
-              <ToolCard title={title} iconURL={iconURL} />
+              <ToolCard key={title} title={title} iconURL={iconURL} />
             ))}
           </ul>
         </Section>
@@ -85,7 +87,7 @@ const App = () => {
           <SectionTitle>My Links </SectionTitle>
           <ul className="flex flex-col gap-2">
             {contacts.map(({ title, iconURL }) => (
-              <ContactCard title={title} iconURL={iconURL} />
+              <ContactCard key={title} title={title} iconURL={iconURL} />
             ))}
           </ul>
         </Section>
