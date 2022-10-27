@@ -1,6 +1,7 @@
 import { Dialog, Transition } from '@headlessui/react';
 import { Fragment } from 'react';
 import CloseIcon from './icons/CloseIcon';
+
 interface ModalProps {
   title?: string;
   open: boolean;

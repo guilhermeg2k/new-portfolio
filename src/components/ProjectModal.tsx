@@ -1,5 +1,5 @@
 import { ReactNode, useState } from 'react';
-import { projects } from '../data';
+import useData from '../hooks/useData';
 import Badge from './Badge';
 import CodeBracket from './icons/CodeBracket';
 import Eye from './icons/Eye';
@@ -10,7 +10,7 @@ import Screenshots from './Screenshoots';
 const Button = ({ children }: { children: ReactNode }) => {
   return (
     <button
-      className={`font-roboto flex min-w-[100px] items-center gap-2 rounded-sm bg-orange-600 py-2 px-4 text-sm font-bold uppercase text-white duration-200 ease-in-out hover:bg-orange-500 active:bg-orange-600`}
+      className={`font-roboto flex min-w-[100px] items-center gap-2 rounded-sm bg-orange-600 py-2 px-4 text-xs font-bold uppercase text-white duration-200 ease-in-out hover:bg-orange-500 active:bg-orange-600 md:text-sm`}
     >
       {children}
     </button>
@@ -25,6 +25,7 @@ interface ProjectModalProps {
 
 const ProjectModal = ({ open, onClose, projectId }: ProjectModalProps) => {
   const [isScreenshotsOpen, setIsScreenshotsOpen] = useState(false);
+  const { projects } = useData();
   const currentProject = projects.find((project) => project.id === projectId);
   const { id, title, description, tags, screenshots } = currentProject!;
 

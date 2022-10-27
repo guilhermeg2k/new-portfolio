@@ -1,12 +1,10 @@
 import { ReactNode, useState } from 'react';
-import Badge from './components/Badge';
 import ContactCard from './components/ContactCard';
-import Modal from './components/Modal';
 import ProjectCard from './components/ProjectCard';
 import ProjectModal from './components/ProjectModal';
 import ToolCard from './components/ToolCard';
 import WorkExperienceCard from './components/WorkExperienceCard';
-import { contacts, projects, techs, works } from './data';
+import useData from './hooks/useData';
 
 const SectionTitle = ({ children }: { children: ReactNode }) => {
   return (
@@ -23,6 +21,7 @@ const Section = ({ children }: { children: ReactNode }) => {
 const App = () => {
   const [isProjectModalOpen, setIsProjectModalOpen] = useState(false);
   const [currentProjectId, setCurrentProjectId] = useState(1);
+  const { contacts, projects, techs, works } = useData();
 
   const onProjectClickHandler = (id: number) => {
     setCurrentProjectId(id);
