@@ -1,6 +1,6 @@
 import { createContext, ReactNode, useState } from 'react';
 
-enum Language {
+export enum Language {
   pt = 'pt',
   en = 'en',
 }

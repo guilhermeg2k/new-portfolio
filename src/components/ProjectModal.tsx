@@ -5,7 +5,7 @@ import CodeBracket from './icons/CodeBracket';
 import Eye from './icons/Eye';
 import ZoomIn from './icons/ZoomIn';
 import Modal from './Modal';
-import Screenshots from './Screenshoots';
+import Screenshots from './Screenshots';
 
 const Link = ({ children, href }: { children: ReactNode; href: string }) => {
   return (

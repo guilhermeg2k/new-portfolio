@@ -1,4 +1,5 @@
 import { ReactNode, useState } from 'react';
+import LanguageSelector from './components/LanguageSelector';
 import LinkCard from './components/LinkCard';
 import ProjectCard from './components/ProjectCard';
 import ProjectModal from './components/ProjectModal';
@@ -30,6 +31,7 @@ const App = () => {
 
   return (
     <div className="h-full w-full bg-stone-900 text-orange-100">
+      <LanguageSelector />
       <ProjectModal
         open={isProjectModalOpen}
         onClose={() => setIsProjectModalOpen(false)}
