@@ -21,7 +21,7 @@ const Section = ({ children }: { children: ReactNode }) => {
 const App = () => {
   const [isProjectModalOpen, setIsProjectModalOpen] = useState(false);
   const [currentProjectId, setCurrentProjectId] = useState(1);
-  const { home, contacts, projects, techs, works } = useTranslation();
+  const { home, links, projects, techs, works } = useTranslation();
 
   const onProjectClickHandler = (id: number) => {
     setCurrentProjectId(id);
@@ -83,8 +83,13 @@ const App = () => {
         <Section>
           <SectionTitle>{home.linksTitle}</SectionTitle>
           <ul className="flex flex-col gap-2">
-            {contacts.map(({ title, iconURL }) => (
-              <ContactCard key={title} title={title} iconURL={iconURL} />
+            {links.map(({ title, iconURL, link }) => (
+              <ContactCard
+                key={title}
+                title={title}
+                iconURL={iconURL}
+                href={link}
+              />
             ))}
           </ul>
         </Section>

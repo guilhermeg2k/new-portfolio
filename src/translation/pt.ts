@@ -223,22 +223,26 @@ export default {
     },
   ],
 
-  contacts: [
+  links: [
     {
       title: 'Linkedin',
       iconURL: 'https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg',
+      link: 'https://www.linkedin.com/in/guilherme-nascimento-b236b9176/',
     },
     {
       title: 'Github',
       iconURL: 'https://cdn.worldvectorlogo.com/logos/github-icon-1.svg',
+      link: 'https://github.com/guilhermeg2k',
     },
     {
       title: 'Gmail',
       iconURL: 'https://cdn.worldvectorlogo.com/logos/gmail-icon.svg',
+      link: 'mailto:contato@gnascimento.dev',
     },
     {
       title: 'My Resume',
       iconURL: 'https://cdn.worldvectorlogo.com/logos/doc-icon-2000-03-.svg',
+      link: 'https://docs.google.com/document/d/1dXzlqErCCiJNkNZK8ofmygAFQgap51Ln73kq2qdKr2I',
     },
   ],
 
