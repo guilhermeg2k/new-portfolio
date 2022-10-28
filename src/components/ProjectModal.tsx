@@ -27,7 +27,7 @@ const ProjectModal = ({ open, onClose, projectId }: ProjectModalProps) => {
   const [isScreenshotsOpen, setIsScreenshotsOpen] = useState(false);
   const { projects, projectModal } = useTranslation();
   const currentProject = projects.find((project) => project.id === projectId);
-  const { id, title, description, tags, screenshots } = currentProject!;
+  const { title, description, tags, screenshots, year } = currentProject!;
 
   return (
     <Modal title={title} open={open} onClose={onClose}>
@@ -41,7 +41,10 @@ const ProjectModal = ({ open, onClose, projectId }: ProjectModalProps) => {
           className="relative cursor-zoom-in duration-150 ease-in-out hover:opacity-90"
           onClick={() => setIsScreenshotsOpen(true)}
         >
-          <img src={screenshots![0]} />
+          <img
+            src={screenshots![0]}
+            alt={`Screenshot of the project ${title}`}
+          />
           <div className="absolute bottom-2 right-2">
             <ZoomIn className="h-8 w-8 stroke-orange-600" />
           </div>
@@ -52,6 +55,9 @@ const ProjectModal = ({ open, onClose, projectId }: ProjectModalProps) => {
               {title}
             </Badge>
           ))}
+        </div>
+        <div className="self-start text-sm font-semibold uppercase text-orange-500">
+          {projectModal.year} : {year}
         </div>
         <div>{description.complete}</div>
         <div className="flex gap-5">

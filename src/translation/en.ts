@@ -25,6 +25,7 @@ export default {
         great experience building it, i'm learning a lot about video encoding,\
         streaming and i had a good time creating the Video Player.",
       },
+      year: '2022',
       tags: [
         { title: 'TS', bgColor: 'bg-orange-400' },
         { title: 'REACT', bgColor: 'bg-blue-400' },
@@ -50,6 +51,7 @@ export default {
     {
       id: 2,
       title: 'Anipool',
+      year: '2022',
       description: {
         simple:
           'Anipool is a platform to create anime quizes that is integrated with anilist',
@@ -87,6 +89,7 @@ export default {
     {
       id: 3,
       title: 'Neofy',
+      year: '2021',
       description: {
         simple:
           'Neofy is web Spotify client that uses Spotify API and Spotify SDK to get user data and play songs on the browser',
@@ -109,6 +112,7 @@ export default {
     {
       id: 4,
       title: 'Mercury',
+      year: '2022',
       description: {
         simple: 'Mercury is a really simple CI/CD web platform',
         complete:
@@ -133,6 +137,7 @@ export default {
     {
       id: 5,
       title: 'Spotify Landing Clone',
+      year: '2021',
       description: {
         simple: 'This is a clone of the Spotify landing page',
         complete:
@@ -159,6 +164,7 @@ export default {
     {
       id: 6,
       title: 'hltv clone',
+      year: '2020',
       description: {
         simple: 'This is a clone of hltv.org desktop home page',
         complete:
@@ -177,6 +183,7 @@ export default {
     {
       id: 7,
       title: 'Blog template',
+      year: '2021',
       description: {
         simple: 'A cool and simple blog template',
         complete:
@@ -291,7 +298,7 @@ export default {
     {
       title: 'My Resume',
       iconURL: 'https://cdn.worldvectorlogo.com/logos/doc-icon-2000-03-.svg',
-      link: 'https://docs.google.com/document/d/1dXzlqErCCiJNkNZK8ofmygAFQgap51Ln73kq2qdKr2I',
+      link: 'https://docs.google.com/document/d/1DgyIHZsbtCandU6JTtxoyhgTC7SgdDpvW0SJlWKUj1s',
     },
   ],
 
@@ -300,6 +307,7 @@ export default {
       sourceCode: 'source code',
       livePreview: 'live preview',
     },
+    year: 'Project year',
   },
 
   footer: {

@@ -17,14 +17,15 @@ export default {
       title: 'Anilib',
       description: {
         simple:
-          'Anilib its a local anime streaming platform, that uses AniList API as anime data source',
+          'Anilib is a local anime streaming platform that uses AniList API as anime data source',
         complete:
-          "Anilib its a local anime streaming platform, that uses AniList API as\
+          "Anilib is a local anime streaming platform that uses AniList API as\
         data source. This project was made because i wanted to be able to\
         stream my animes to multi devices, specially to my TV. It have been a\
         great experience building it, i'm learning a lot about video encoding,\
         streaming and i had a good time creating the Video Player.",
       },
+      year: '2022',
       tags: [
         { title: 'TS', bgColor: 'bg-orange-400' },
         { title: 'REACT', bgColor: 'bg-blue-400' },
@@ -50,10 +51,12 @@ export default {
     {
       id: 2,
       title: 'Anipool',
+      year: '2022',
       description: {
         simple:
-          'Anilib its a local anime streaming platform, that uses AniList API as anime data source',
-        complete: '',
+          'Anipool is a platform to create anime quizes that is integrated with anilist',
+        complete:
+          "Anipool is a platform to create anime quizes that is integrated with anilist. This project was created because i could not find a good place to create anime quizes like 'Who anime should i watch next?' or 'In your opinion which is the best anime of this season'. One thing about this project is that i could not find a dead simple date picker that works fine with tailwind without having to add a whole library around it, so i decided to build a really cool one.",
       },
       tags: [
         { title: 'TS', bgColor: 'bg-blue-600' },
@@ -66,14 +69,32 @@ export default {
         { title: 'Anilist API', bgColor: 'bg-blue-700' },
         { title: 'DynamoDB', bgColor: 'bg-emerald-800' },
       ],
+      screenshots: [
+        './public/assets/images/screenshoots/anipool/anipool-1.webp',
+        './public/assets/images/screenshoots/anipool/anipool-2.webp',
+        './public/assets/images/screenshoots/anipool/anipool-3.webp',
+        './public/assets/images/screenshoots/anipool/anipool-4.webp',
+        './public/assets/images/screenshoots/anipool/anipool-5.webp',
+        './public/assets/images/screenshoots/anipool/anipool-6.webp',
+        './public/assets/images/screenshoots/anipool/anipool-7.webp',
+        './public/assets/images/screenshoots/anipool/anipool-8.webp',
+        './public/assets/images/screenshoots/anipool/anipool-9.webp',
+        './public/assets/images/screenshoots/anipool/anipool-10.webp',
+        './public/assets/images/screenshoots/anipool/anipool-11.webp',
+        './public/assets/images/screenshoots/anipool/anipool-12.webp',
+        './public/assets/images/screenshoots/anipool/anipool-13.webp',
+        './public/assets/images/screenshoots/anipool/anipool-14.webp',
+      ],
     },
     {
       id: 3,
       title: 'Neofy',
+      year: '2021',
       description: {
         simple:
-          "Neofy it's a Spotify client alternative that is on its very early stage",
-        complete: '',
+          'Neofy is web Spotify client that uses Spotify API and Spotify SDK to get user data and play songs on the browser',
+        complete:
+          'Neofy is web Spotify client that uses Spotify API and Spotify SDK to get user data and play songs on the browser. One cool thing about this project is that i had to implement the Spotify Authorization Flow which was a really good learning experience.',
       },
       tags: [
         { title: 'TS', bgColor: 'bg-blue-600' },
@@ -83,14 +104,19 @@ export default {
         { title: 'SPOTIFY API', bgColor: 'bg-green-600' },
         { title: 'SPOTIFY SDK', bgColor: 'bg-green-600' },
       ],
+      screenshots: [
+        './public/assets/images/screenshoots/neofy/neofy-1.webp',
+        './public/assets/images/screenshoots/neofy/neofy-2.webp',
+      ],
     },
     {
       id: 4,
       title: 'Mercury',
+      year: '2022',
       description: {
-        simple:
-          "Neofy it's a Spotify client alternative that is on its very early stage",
-        complete: '',
+        simple: 'Mercury is a really simple CI/CD web platform',
+        complete:
+          "Mercury is a really simple CI/CD web platform. Before of creating this project me and my friends were using Jenkins to automate our Discord Bot's deploy, but Jenkins by itself was taking too much ram of our humble VPS, so i decided to made a more simplistic platform that would fill our needs and take less resources from our machine.",
       },
       tags: [
         { title: 'TS', bgColor: 'bg-blue-600' },
@@ -102,15 +128,20 @@ export default {
         { title: 'SQLITE', bgColor: 'bg-sky-500' },
         { title: 'KnexJS', bgColor: 'bg-orange-500' },
       ],
-      screenshots: [],
+      screenshots: [
+        './public/assets/images/screenshoots/mercury/mercury-1.webp',
+        './public/assets/images/screenshoots/mercury/mercury-2.webp',
+        './public/assets/images/screenshoots/mercury/mercury-3.webp',
+      ],
     },
     {
       id: 5,
       title: 'Spotify Landing Clone',
+      year: '2021',
       description: {
-        simple:
-          "Neofy it's a Spotify client alternative that is on its very early stage",
-        complete: '',
+        simple: 'This is a clone of the Spotify landing page',
+        complete:
+          'This is a clone of the Spotify landing page. My main goal with this project was to improve my css skills and it was a great experience because i learned a lot.',
       },
       tags: [
         { title: 'TS', bgColor: 'bg-blue-600' },
@@ -118,34 +149,60 @@ export default {
         { title: 'CSS', bgColor: 'bg-blue-500' },
         { title: 'REACT-ROUTER', bgColor: 'bg-red-600' },
       ],
+      screenshots: [
+        './public/assets/images/screenshoots/spotify-clone/spotify-clone-1.webp',
+        './public/assets/images/screenshoots/spotify-clone/spotify-clone-2.webp',
+        './public/assets/images/screenshoots/spotify-clone/spotify-clone-3.webp',
+        './public/assets/images/screenshoots/spotify-clone/spotify-clone-4.webp',
+        './public/assets/images/screenshoots/spotify-clone/spotify-clone-5.webp',
+        './public/assets/images/screenshoots/spotify-clone/spotify-clone-6.webp',
+        './public/assets/images/screenshoots/spotify-clone/spotify-clone-7.webp',
+        './public/assets/images/screenshoots/spotify-clone/spotify-clone-8.webp',
+        './public/assets/images/screenshoots/spotify-clone/spotify-clone-9.webp',
+      ],
     },
     {
       id: 6,
       title: 'hltv clone',
+      year: '2020',
       description: {
-        simple:
-          "Neofy it's a Spotify client alternative that is on its very early stage",
-        complete: '',
+        simple: 'This is a clone of hltv.org desktop home page',
+        complete:
+          'This is a clone of hltv.org desktop home page. I really enjoy playing CSGO so i thought it would be fun to made a clone of this website which is the biggest competitive news portal of the game.',
       },
       tags: [
         { title: 'TS', bgColor: 'bg-blue-600' },
         { title: 'REACT', bgColor: 'bg-blue-400' },
         { title: 'CSS', bgColor: 'bg-sky-600' },
       ],
+      screenshots: [
+        './public/assets/images/screenshoots/hltv-clone/hltv-clone-1.webp',
+        './public/assets/images/screenshoots/hltv-clone/hltv-clone-2.webp',
+      ],
     },
     {
       id: 7,
       title: 'Blog template',
+      year: '2021',
       description: {
-        simple:
-          "Neofy it's a Spotify client alternative that is on its very early stage",
-        complete: '',
+        simple: 'A cool and simple blog template',
+        complete:
+          'A cool and simple blog template that i built while getting into NextJS world. It was one of my first projects using Next.',
       },
       tags: [
         { title: 'TS', bgColor: 'bg-blue-600' },
         { title: 'REACT', bgColor: 'bg-blue-400' },
         { title: 'NEXTJS', bgColor: 'bg-neutral-600' },
         { title: 'SCSS', bgColor: 'bg-pink-600' },
+      ],
+      screenshots: [
+        './public/assets/images/screenshoots/blog-template/blog-template-1.webp',
+        './public/assets/images/screenshoots/blog-template/blog-template-2.webp',
+        './public/assets/images/screenshoots/blog-template/blog-template-3.webp',
+        './public/assets/images/screenshoots/blog-template/blog-template-4.webp',
+        './public/assets/images/screenshoots/blog-template/blog-template-5.webp',
+        './public/assets/images/screenshoots/blog-template/blog-template-6.webp',
+        './public/assets/images/screenshoots/blog-template/blog-template-7.webp',
       ],
     },
   ],
@@ -251,6 +308,7 @@ export default {
       sourceCode: 'source code',
       livePreview: 'live preview',
     },
+    year: 'Project year',
   },
 
   footer: {

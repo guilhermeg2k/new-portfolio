@@ -51,7 +51,11 @@ const Screenshots = ({ open, onClose, screenshots }: ScreenshotsProps) => {
         </button>
         <div className="flex h-full w-full flex-col items-center justify-center gap-2">
           <div className="min-w-[200px]">
-            <img src={screenshots![currentScreenshot]} className="w-full" />
+            <img
+              src={screenshots![currentScreenshot]}
+              className="w-full"
+              alt={`Screenshot ${currentScreenshot}`}
+            />
           </div>
           <span className="text-sm text-orange-100">
             {currentScreenshot + 1} / {screenshots.length}
