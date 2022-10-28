@@ -6,8 +6,8 @@ export default {
         "I'm a Computer Scientist and Web Developer specialized in the Front-end side of web development that loves to bring life to user interfaces",
     },
     projectsTitle: 'Some of my Projects',
-    worksTitle: 'My Work Experience',
-    techsTitle: 'My Favorite Techs',
+    worksTitle: 'Work Experience',
+    techsTitle: 'Favorite Techs',
     linksTitle: 'My Links',
   },
 
@@ -55,10 +55,9 @@ export default {
       title: 'Anipool',
       year: '2022',
       description: {
-        simple:
-          'Anipool is a platform to create anime quizes that is integrated with anilist',
+        simple: 'Anipool is a platform to create anime/manga quizes',
         complete:
-          "Anipool is a platform to create anime quizes that is integrated with anilist. This project was created because i could not find a good place to create anime quizes like 'Who anime should i watch next?' or 'In your opinion which is the best anime of this season'. One thing about this project is that i could not find a dead simple date picker that works fine with tailwind without having to add a whole library around it, so i decided to build a really cool one.",
+          "Anipool is a platform to create anime/manga quizes that is integrated with anilist. This project was created because i could not find a good place to create anime quizes like 'Who anime should i watch next?' or 'In your opinion which is the best anime of this season'. One thing about this project is that i could not find a dead simple date picker that works fine with tailwind without having to add a whole library around it, so i decided to build a really cool one.",
       },
       tags: [
         { title: 'TS', bgColor: 'bg-blue-600' },
@@ -98,7 +97,7 @@ export default {
         simple:
           'Neofy is web Spotify client that uses Spotify API and Spotify SDK to get user data and play songs on the browser',
         complete:
-          'Neofy is web Spotify client that uses Spotify API and Spotify SDK to get user data and play songs on the browser. One cool thing about this project is that i had to implement the Spotify Authorization Flow which was a really good learning experience.',
+          'Neofy is web Spotify client that uses Spotify API and Spotify SDK to get user data and play songs on the browser. One cool thing about this project is that i had to implement the Spotify Authorization Flow which was a really good learning experience about authorization',
       },
       tags: [
         { title: 'TS', bgColor: 'bg-blue-600' },
@@ -176,7 +175,7 @@ export default {
       title: 'hltv clone',
       year: '2020',
       description: {
-        simple: 'This is a clone of hltv.org desktop home page',
+        simple: 'This is a clone of HLTV.org desktop home page',
         complete:
           'This is a clone of hltv.org desktop home page. I really enjoy playing CSGO so i thought it would be fun to made a clone of this website which is the biggest competitive news portal of the game.',
       },
@@ -272,8 +271,7 @@ export default {
     },
     {
       title: 'Figma',
-      iconURL:
-        'https://i.pinimg.com/originals/66/8c/cc/668cccb3f734f342e07c0185e6d9a975.webp',
+      iconURL: 'https://cdn.worldvectorlogo.com/logos/figma-1.svg',
     },
     {
       title: 'Git',

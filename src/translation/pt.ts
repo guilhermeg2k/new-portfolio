@@ -1,14 +1,14 @@
 export default {
   home: {
     introduction: {
-      title: "Hi, I'm Guilherme",
+      title: 'Hey, Seja Bem-vindo',
       description:
-        "I'm a Computer Scientist and Web Developer specialized in the Front-end side of web development that loves to bring life to user interfaces",
+        'Meu nome é Guilherme e esse é meu portfolio. Eu sou um desenvolvedor um Web, formado em Ciência da Computação, especializado no Front-End e um dos meus maiores prazeres é dar vida a interfaces',
     },
-    projectsTitle: 'Some of my Projects',
-    worksTitle: 'My Work Experience',
-    techsTitle: 'My Favorite Techs',
-    linksTitle: 'My Links',
+    projectsTitle: 'Alguns dos meus projetos',
+    worksTitle: 'Experiência profissional',
+    techsTitle: 'Ferramentas favoritas',
+    linksTitle: 'Meus Links',
   },
 
   projects: [
@@ -17,13 +17,11 @@ export default {
       title: 'Anilib',
       description: {
         simple:
-          'Anilib is a local anime streaming platform that uses AniList API as anime data source',
+          'O Anilib é uma plataforma de streaming local para animes que usa a API do AniList como fonte de dados',
         complete:
-          "Anilib is a local anime streaming platform that uses AniList API as\
-        data source. This project was made because i wanted to be able to\
-        stream my animes to multi devices, specially to my TV. It have been a\
-        great experience building it, i'm learning a lot about video encoding,\
-        streaming and i had a good time creating the Video Player.",
+          'O Anilib é uma plataforma de streaming local para animes que usa a API do AniList como fonte de dados. Eu desenvolvi esse projeto porque eu queria\
+          transmitir meus animes para diversos dispositivos, especialmente para minha TV. Tem sido um\
+          ótima experiência desenvolve-lo, estou aprendendo muito principalmente sobre codificação  e streaming de vídeo, além de que eu me diverti bastante criando o Video Player.',
       },
       year: '2022',
       tags: [
@@ -56,9 +54,9 @@ export default {
       year: '2022',
       description: {
         simple:
-          'Anipool is a platform to create anime quizes that is integrated with anilist',
+          'O Anipool é uma plataforma para criação quizes de animes e mangás',
         complete:
-          "Anipool is a platform to create anime quizes that is integrated with anilist. This project was created because i could not find a good place to create anime quizes like 'Who anime should i watch next?' or 'In your opinion which is the best anime of this season'. One thing about this project is that i could not find a dead simple date picker that works fine with tailwind without having to add a whole library around it, so i decided to build a really cool one.",
+          "Anipool é uma plataforma para criar quizes de animes/mangás integrado ao anilist. Este projeto foi criado porque eu não consegui encontrar um bom lugar para criar quizes, como, 'Qual proximo anime devo assistir?' ou 'Qual melhor anime dessa temporada?'. Uma fato interessante sobre este projeto é que eu não consegui encontrar um simples seletor de data que funcionasse bem com o tailwind, sem ter que adicionar uma biblioteca inteira, então decidi construir que um ficou muito bom.",
       },
       tags: [
         { title: 'TS', bgColor: 'bg-blue-600' },
@@ -96,9 +94,9 @@ export default {
       year: '2021',
       description: {
         simple:
-          'Neofy is web Spotify client that uses Spotify API and Spotify SDK to get user data and play songs on the browser',
+          'Neofy é um cliente do Spotify para web que utiliza a API e o SDK do Spotify para obter dados do usuário e reproduzir músicas no navegador',
         complete:
-          'Neofy is web Spotify client that uses Spotify API and Spotify SDK to get user data and play songs on the browser. One cool thing about this project is that i had to implement the Spotify Authorization Flow which was a really good learning experience.',
+          'Neofy é um cliente do Spotify para web que utiliza a API e o SDK do Spotify para obter dados do usuário e reproduzir músicas no navegador. Uma coisa bacana sobre este projeto é que eu tive que implementar o Spotify Authorization Flow, o qual resultou em uma boa experiência de aprendizado sobre autenticação.',
       },
       tags: [
         { title: 'TS', bgColor: 'bg-blue-600' },
@@ -120,9 +118,9 @@ export default {
       title: 'Mercury',
       year: '2022',
       description: {
-        simple: 'Mercury is a really simple CI/CD web platform',
+        simple: 'O Mercury é uma simples plataforma web de CI/CD',
         complete:
-          "Mercury is a really simple CI/CD web platform. Before of creating this project me and my friends were using Jenkins to automate our Discord Bot's deploy, but Jenkins by itself was taking too much ram of our humble VPS, so i decided to made a more simplistic platform that would fill our needs and take less resources from our machine.",
+          'O Mercury é uma simples plataforma web de CI/CD. Antes de criar este projeto eu e meus amigos estávamos usando o Jenkins para automatizar o deploy do nosso bot de discord, mas o Jenkins por si só estava consumindo muita ram da nossa humilde VPS, então decidi fazer uma plataforma mais simplista que atendesse nossas necessidades e consumisse menos recursos da nossa máquina.',
       },
       tags: [
         { title: 'TS', bgColor: 'bg-blue-600' },
@@ -147,9 +145,9 @@ export default {
       title: 'Spotify Landing Clone',
       year: '2021',
       description: {
-        simple: 'This is a clone of the Spotify landing page',
+        simple: 'Esse é um clone da landing page do Spotify',
         complete:
-          'This is a clone of the Spotify landing page. My main goal with this project was to improve my css skills and it was a great experience because i learned a lot.',
+          'Esse é um clone da landing page do Spotify. Meu principal objetivo com este projeto foi melhorar minhas habilidades com CSS, foi uma ótima experiência porque aprendi bastante coisa.',
       },
       tags: [
         { title: 'TS', bgColor: 'bg-blue-600' },
@@ -176,9 +174,9 @@ export default {
       title: 'hltv clone',
       year: '2020',
       description: {
-        simple: 'This is a clone of hltv.org desktop home page',
+        simple: 'Esse é um clone da página inicial da HLTV.org',
         complete:
-          'This is a clone of hltv.org desktop home page. I really enjoy playing CSGO so i thought it would be fun to made a clone of this website which is the biggest competitive news portal of the game.',
+          'Esse é um clone da página inicial da HLTV.org. Eu sou apaixonado pelo competitivo de CSGO, então fazer o clone deste site, que é o maior portal de notícias sobre o competitivo do jogo, foi muito divertido.',
       },
       tags: [
         { title: 'TS', bgColor: 'bg-blue-600' },
@@ -197,9 +195,9 @@ export default {
       title: 'Blog template',
       year: '2021',
       description: {
-        simple: 'A cool and simple blog template',
+        simple: 'Um template de blog simples e bacana',
         complete:
-          'A cool and simple blog template that i built while getting into NextJS world. It was one of my first projects using Next.',
+          'Um template de blog simples e bacana que eu construí enquanto aprendia NextJS. Esse foi um dos meus primeiros projetos utilizando Next.',
       },
       tags: [
         { title: 'TS', bgColor: 'bg-blue-600' },
@@ -230,7 +228,7 @@ export default {
         'Desenvolvimento e otimização de interfaces, dashboards e \
       ferramentas de acompanhamento para uma plataforma de \
       inteligência geoclimática utilizando principalmente as \
-      tecnologias Javascript, React, Open Layers, Material-UI, Jest e Enzyme',
+      tecnologias Javascript, React, Material-UI, Open Layers, Jest e Enzyme',
     },
     {
       company: 'Tribunal de Contas da União (TCU)',
@@ -238,7 +236,7 @@ export default {
       dateRange: 'Jan. 2020 - Oct. 2021',
       description:
         'Desenvolvimento e manutenção de aplicações APEX, utilizando principalmente as tecnologias \
-        PLSQL, HTML, CSS, Javascript e jQuery.',
+        ORACLE APEX, PLSQL, HTML, CSS, Javascript e jQuery.',
     },
   ],
 
@@ -273,8 +271,7 @@ export default {
     },
     {
       title: 'Figma',
-      iconURL:
-        'https://i.pinimg.com/originals/66/8c/cc/668cccb3f734f342e07c0185e6d9a975.webp',
+      iconURL: 'https://cdn.worldvectorlogo.com/logos/figma-1.svg',
     },
     {
       title: 'Git',
@@ -313,20 +310,21 @@ export default {
     {
       title: 'My Resume',
       iconURL: 'https://cdn.worldvectorlogo.com/logos/doc-icon-2000-03-.svg',
-      link: 'https://docs.google.com/document/d/1dXzlqErCCiJNkNZK8ofmygAFQgap51Ln73kq2qdKr2I',
+      link: 'https://docs.google.com/document/d/1DgyIHZsbtCandU6JTtxoyhgTC7SgdDpvW0SJlWKUj1s',
     },
   ],
 
   projectModal: {
     button: {
-      sourceCode: 'source code',
+      sourceCode: 'código fonte',
       livePreview: 'live preview',
     },
-    year: 'Project year',
+    year: 'Ano do projeto',
   },
 
   footer: {
-    createdBy: 'PAGE CREATED BY GUILHERMEG2K AND AVAILABLE ON GITHUB',
-    iconsBy: 'ICONS BY worldvectorlogo.com AND HEROICONS',
+    createdBy:
+      'PÁGINA CRIADA POR GUILHERMEG2K, CÓDIGO FONTE DISPONÍVEL NO GITHUB',
+    iconsBy: 'ICONES POR worldvectorlogo.com, flagicons.lipis.dev E HEROICONS',
   },
 };
