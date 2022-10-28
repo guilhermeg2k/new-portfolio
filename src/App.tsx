@@ -98,7 +98,7 @@ const App = () => {
 
         <footer className="flex w-full flex-col justify-center gap-1 text-xs  md:justify-start">
           <a
-            className="font-semibold uppercase"
+            className="font-semibold uppercase duration-200 ease-in-out hover:text-orange-500"
             href="https://github.com/guilhermeg2k/new-portfolio"
             target="_blank"
             rel="noopener noreferrer"

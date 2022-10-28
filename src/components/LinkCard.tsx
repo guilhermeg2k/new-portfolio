@@ -6,7 +6,12 @@ interface ContactCardProps {
 
 const LinkCard = ({ title, iconURL, href }: ContactCardProps) => {
   return (
-    <a href={href} target="_blank" rel="noopener noreferrer">
+    <a
+      href={href}
+      className="duration-200 ease-in-out hover:text-orange-500"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <li className="flex items-center gap-2">
         <div className="rounded-sm bg-white">
           <img className="p-1" src={iconURL} width="23px" />
