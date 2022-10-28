@@ -36,15 +36,15 @@ export default {
         { title: 'FFmpeg', bgColor: 'bg-emerald-700' },
       ],
       screenshots: [
-        './public/assets/images/screenshoots/anilib/anilib-1.png',
-        './public/assets/images/screenshoots/anilib/anilib-2.png',
-        './public/assets/images/screenshoots/anilib/anilib-3.png',
-        './public/assets/images/screenshoots/anilib/anilib-4.png',
-        './public/assets/images/screenshoots/anilib/anilib-5.png',
-        './public/assets/images/screenshoots/anilib/anilib-6.png',
-        './public/assets/images/screenshoots/anilib/anilib-7.png',
-        './public/assets/images/screenshoots/anilib/anilib-8.png',
-        './public/assets/images/screenshoots/anilib/anilib-9.png',
+        './public/assets/images/screenshoots/anilib/anilib-1.webp',
+        './public/assets/images/screenshoots/anilib/anilib-2.webp',
+        './public/assets/images/screenshoots/anilib/anilib-3.webp',
+        './public/assets/images/screenshoots/anilib/anilib-4.webp',
+        './public/assets/images/screenshoots/anilib/anilib-5.webp',
+        './public/assets/images/screenshoots/anilib/anilib-6.webp',
+        './public/assets/images/screenshoots/anilib/anilib-7.webp',
+        './public/assets/images/screenshoots/anilib/anilib-8.webp',
+        './public/assets/images/screenshoots/anilib/anilib-9.webp',
       ],
     },
     {
@@ -203,7 +203,7 @@ export default {
     {
       title: 'Figma',
       iconURL:
-        'https://i.pinimg.com/originals/66/8c/cc/668cccb3f734f342e07c0185e6d9a975.png',
+        'https://i.pinimg.com/originals/66/8c/cc/668cccb3f734f342e07c0185e6d9a975.webp',
     },
     {
       title: 'Git',
