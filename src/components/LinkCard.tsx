@@ -11,7 +11,7 @@ const LinkCard = ({ title, iconURL, href }: ContactCardProps) => {
         <div className="rounded-sm bg-white">
           <img className="p-1" src={iconURL} width="23px" />
         </div>
-        <span className="">{title}</span>
+        <span className="text-sm md:text-base">{title}</span>
       </li>
     </a>
   );

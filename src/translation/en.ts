@@ -47,6 +47,8 @@ export default {
         './public/assets/images/screenshoots/anilib/anilib-8.webp',
         './public/assets/images/screenshoots/anilib/anilib-9.webp',
       ],
+      sourceURL: 'https://github.com/guilhermeg2k/anilib',
+      previewURL: null,
     },
     {
       id: 2,
@@ -85,6 +87,8 @@ export default {
         './public/assets/images/screenshoots/anipool/anipool-13.webp',
         './public/assets/images/screenshoots/anipool/anipool-14.webp',
       ],
+      sourceURL: 'https://github.com/guilhermeg2k/anipool',
+      previewURL: null,
     },
     {
       id: 3,
@@ -108,6 +112,8 @@ export default {
         './public/assets/images/screenshoots/neofy/neofy-1.webp',
         './public/assets/images/screenshoots/neofy/neofy-2.webp',
       ],
+      sourceURL: 'https://github.com/guilhermeg2k/neofy',
+      previewURL: 'https://neofy.vercel.app/',
     },
     {
       id: 4,
@@ -133,6 +139,8 @@ export default {
         './public/assets/images/screenshoots/mercury/mercury-2.webp',
         './public/assets/images/screenshoots/mercury/mercury-3.webp',
       ],
+      sourceURL: 'https://github.com/Manquit-Devs/mercury_f',
+      previewURL: null,
     },
     {
       id: 5,
@@ -160,6 +168,8 @@ export default {
         './public/assets/images/screenshoots/spotify-clone/spotify-clone-8.webp',
         './public/assets/images/screenshoots/spotify-clone/spotify-clone-9.webp',
       ],
+      sourceURL: 'https://github.com/guilhermeg2k/spotify-clone',
+      previewURL: 'https://guilhermeg2k.github.io/spotify-clone/',
     },
     {
       id: 6,
@@ -179,6 +189,8 @@ export default {
         './public/assets/images/screenshoots/hltv-clone/hltv-clone-1.webp',
         './public/assets/images/screenshoots/hltv-clone/hltv-clone-2.webp',
       ],
+      sourceURL: 'https://github.com/guilhermeg2k/hltv-clone',
+      previewURL: 'https://guilhermeg2k.github.io/hltv-clone/build/',
     },
     {
       id: 7,
@@ -204,6 +216,8 @@ export default {
         './public/assets/images/screenshoots/blog-template/blog-template-6.webp',
         './public/assets/images/screenshoots/blog-template/blog-template-7.webp',
       ],
+      sourceURL: 'https://github.com/guilhermeg2k/blog-template',
+      previewURL: 'https://blog-template-guilhermeg2k.vercel.app/',
     },
   ],
 

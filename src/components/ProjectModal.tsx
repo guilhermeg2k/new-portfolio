@@ -7,13 +7,16 @@ import ZoomIn from './icons/ZoomIn';
 import Modal from './Modal';
 import Screenshots from './Screenshoots';
 
-const Button = ({ children }: { children: ReactNode }) => {
+const Link = ({ children, href }: { children: ReactNode; href: string }) => {
   return (
-    <button
+    <a
       className={`font-roboto flex min-w-[100px] items-center gap-2 rounded-sm bg-orange-600 py-2 px-4 text-xs font-bold uppercase text-white duration-200 ease-in-out hover:bg-orange-500 active:bg-orange-600 md:text-sm`}
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
     >
       {children}
-    </button>
+    </a>
   );
 };
 
@@ -27,7 +30,8 @@ const ProjectModal = ({ open, onClose, projectId }: ProjectModalProps) => {
   const [isScreenshotsOpen, setIsScreenshotsOpen] = useState(false);
   const { projects, projectModal } = useTranslation();
   const currentProject = projects.find((project) => project.id === projectId);
-  const { title, description, tags, screenshots, year } = currentProject!;
+  const { title, description, tags, screenshots, year, sourceURL, previewURL } =
+    currentProject!;
 
   return (
     <Modal title={title} open={open} onClose={onClose}>
@@ -56,19 +60,24 @@ const ProjectModal = ({ open, onClose, projectId }: ProjectModalProps) => {
             </Badge>
           ))}
         </div>
-        <div className="self-start text-sm font-semibold uppercase text-orange-500">
-          {projectModal.year} : {year}
+        <div className="self-start text-sm  text-orange-500">
+          <span className="font-semibold uppercase">{projectModal.year}:</span>{' '}
+          {year}
         </div>
         <div>{description.complete}</div>
         <div className="flex gap-5">
-          <Button>
-            {projectModal.button.sourceCode}
-            <Eye strokeWidth={2} />
-          </Button>
-          <Button>
-            {projectModal.button.livePreview}
-            <CodeBracket strokeWidth={2} />
-          </Button>
+          {sourceURL && (
+            <Link href={sourceURL}>
+              {projectModal.button.sourceCode}
+              <Eye strokeWidth={2} />
+            </Link>
+          )}
+          {previewURL && (
+            <Link href={previewURL}>
+              {projectModal.button.livePreview}
+              <CodeBracket strokeWidth={2} />
+            </Link>
+          )}
         </div>
       </div>
     </Modal>
