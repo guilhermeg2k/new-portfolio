@@ -1,5 +1,5 @@
 import { ReactNode, useState } from 'react';
-import ContactCard from './components/ContactCard';
+import LinkCard from './components/LinkCard';
 import ProjectCard from './components/ProjectCard';
 import ProjectModal from './components/ProjectModal';
 import ToolCard from './components/ToolCard';
@@ -21,7 +21,7 @@ const Section = ({ children }: { children: ReactNode }) => {
 const App = () => {
   const [isProjectModalOpen, setIsProjectModalOpen] = useState(false);
   const [currentProjectId, setCurrentProjectId] = useState(1);
-  const { home, links, projects, techs, works } = useTranslation();
+  const { home, links, projects, techs, works, footer } = useTranslation();
 
   const onProjectClickHandler = (id: number) => {
     setCurrentProjectId(id);
@@ -84,7 +84,7 @@ const App = () => {
           <SectionTitle>{home.linksTitle}</SectionTitle>
           <ul className="flex flex-col gap-2">
             {links.map(({ title, iconURL, link }) => (
-              <ContactCard
+              <LinkCard
                 key={title}
                 title={title}
                 iconURL={iconURL}
@@ -95,10 +95,15 @@ const App = () => {
         </Section>
 
         <footer className="flex w-full flex-col justify-center gap-1 text-xs  md:justify-start">
-          <span className="font-semibold uppercase">
-            Page created by guilhermeg2k available on github
-          </span>
-          <span className="uppercase">Icons by worldvectorlogo</span>
+          <a
+            className="font-semibold uppercase"
+            href="https://github.com/guilhermeg2k/new-portfolio"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {footer.createdBy}
+          </a>
+          <span className="uppercase">{footer.iconsBy}</span>
         </footer>
       </main>
     </div>

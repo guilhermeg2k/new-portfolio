@@ -4,7 +4,7 @@ interface ContactCardProps {
   href: string;
 }
 
-const ContactCard = ({ title, iconURL, href }: ContactCardProps) => {
+const LinkCard = ({ title, iconURL, href }: ContactCardProps) => {
   return (
     <a href={href} target="_blank" rel="noopener noreferrer">
       <li className="flex items-center gap-2">
@@ -17,4 +17,4 @@ const ContactCard = ({ title, iconURL, href }: ContactCardProps) => {
   );
 };
 
-export default ContactCard;
+export default LinkCard;

@@ -252,4 +252,9 @@ export default {
       livePreview: 'live preview',
     },
   },
+
+  footer: {
+    createdBy: 'PAGE CREATED BY GUILHERMEG2K AND AVAILABLE ON GITHUB',
+    iconsBy: 'ICONS BY worldvectorlogo.com AND HEROICONS',
+  },
 };
