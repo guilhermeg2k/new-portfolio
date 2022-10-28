@@ -3,7 +3,7 @@ export default {
     introduction: {
       title: "Hi, I'm Guilherme",
       description:
-        "I'm a Computer Scientist and Web Developer specialized in the Front-end side of web development that loves to bring life to user interfaces",
+        'This is my portfolio and i am a Web Developer, graduated in Computer Science, specialized in Front-End and one of my greatest pleasures is to bring life to interfaces',
     },
     projectsTitle: 'Some of my Projects',
     worksTitle: 'Work Experience',
