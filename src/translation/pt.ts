@@ -1,4 +1,176 @@
-export const DataInEnglish = {
+export default {
+  home: {
+    introduction: {
+      title: "Hi, I'm Guilherme",
+      description:
+        "I'm a Computer Scientist and Web Developer specialized in the Front-end side of web development that loves to bring life to user interfaces",
+    },
+    projectsTitle: 'Some of my Projects',
+    worksTitle: 'My Work Experience',
+    techsTitle: 'My Favorite Techs',
+    linksTitle: 'My Links',
+  },
+
+  projects: [
+    {
+      id: 1,
+      title: 'Anilib',
+      description: {
+        simple:
+          'Anilib its a local anime streaming platform, that uses AniList API as anime data source',
+        complete:
+          "Anilib its a local anime streaming platform, that uses AniList API as\
+        data source. This project was made because i wanted to be able to\
+        stream my animes to multi devices, specially to my TV. It have been a\
+        great experience building it, i'm learning a lot about video encoding,\
+        streaming and i had a good time creating the Video Player.",
+      },
+      tags: [
+        { title: 'TS', bgColor: 'bg-orange-400' },
+        { title: 'REACT', bgColor: 'bg-blue-400' },
+        { title: 'NEXTJS', bgColor: 'bg-neutral-600' },
+        { title: 'TAILWINDCSS', bgColor: 'bg-blue-500' },
+        { title: 'NODEJS', bgColor: 'bg-emerald-600' },
+        { title: 'GRAPHQL', bgColor: 'bg-rose-600' },
+        { title: 'Anilist API', bgColor: 'bg-blue-700' },
+        { title: 'FFmpeg', bgColor: 'bg-emerald-700' },
+      ],
+      screenshots: [
+        './public/assets/images/screenshoots/anilib/anilib-1.png',
+        './public/assets/images/screenshoots/anilib/anilib-2.png',
+        './public/assets/images/screenshoots/anilib/anilib-3.png',
+        './public/assets/images/screenshoots/anilib/anilib-4.png',
+        './public/assets/images/screenshoots/anilib/anilib-5.png',
+        './public/assets/images/screenshoots/anilib/anilib-6.png',
+        './public/assets/images/screenshoots/anilib/anilib-7.png',
+        './public/assets/images/screenshoots/anilib/anilib-8.png',
+        './public/assets/images/screenshoots/anilib/anilib-9.png',
+      ],
+    },
+    {
+      id: 2,
+      title: 'Anipool',
+      description: {
+        simple:
+          'Anilib its a local anime streaming platform, that uses AniList API as anime data source',
+        complete: '',
+      },
+      tags: [
+        { title: 'TS', bgColor: 'bg-blue-600' },
+        { title: 'REACT', bgColor: 'bg-blue-400' },
+        { title: 'NEXTJS', bgColor: 'bg-neutral-600' },
+        { title: 'TAILWINDCSS', bgColor: 'bg-blue-500' },
+        { title: 'ZUSTAND', bgColor: 'bg-neutral-700' },
+        { title: 'NODEJS', bgColor: 'bg-emerald-600' },
+        { title: 'GRAPHQL', bgColor: 'bg-rose-600' },
+        { title: 'Anilist API', bgColor: 'bg-blue-700' },
+        { title: 'DynamoDB', bgColor: 'bg-emerald-800' },
+      ],
+    },
+    {
+      id: 3,
+      title: 'Neofy',
+      description: {
+        simple:
+          "Neofy it's a Spotify client alternative that is on its very early stage",
+        complete: '',
+      },
+      tags: [
+        { title: 'TS', bgColor: 'bg-blue-600' },
+        { title: 'REACT', bgColor: 'bg-blue-400' },
+        { title: 'NEXTJS', bgColor: 'bg-neutral-600' },
+        { title: 'SCSS', bgColor: 'bg-pink-600' },
+        { title: 'SPOTIFY API', bgColor: 'bg-green-600' },
+        { title: 'SPOTIFY SDK', bgColor: 'bg-green-600' },
+      ],
+    },
+    {
+      id: 4,
+      title: 'Mercury',
+      description: {
+        simple:
+          "Neofy it's a Spotify client alternative that is on its very early stage",
+        complete: '',
+      },
+      tags: [
+        { title: 'TS', bgColor: 'bg-blue-600' },
+        { title: 'REACT', bgColor: 'bg-blue-400' },
+        { title: 'NEXTJS', bgColor: 'bg-neutral-600' },
+        { title: 'MATERIAL-UI', bgColor: 'bg-sky-800' },
+        { title: 'NODEJS', bgColor: 'bg-emerald-600' },
+        { title: 'ExpressJS', bgColor: 'bg-neutral-500' },
+        { title: 'SQLITE', bgColor: 'bg-sky-500' },
+        { title: 'KnexJS', bgColor: 'bg-orange-500' },
+      ],
+      screenshots: [],
+    },
+    {
+      id: 5,
+      title: 'Spotify Landing Clone',
+      description: {
+        simple:
+          "Neofy it's a Spotify client alternative that is on its very early stage",
+        complete: '',
+      },
+      tags: [
+        { title: 'TS', bgColor: 'bg-blue-600' },
+        { title: 'REACT', bgColor: 'bg-blue-400' },
+        { title: 'CSS', bgColor: 'bg-blue-500' },
+        { title: 'REACT-ROUTER', bgColor: 'bg-red-600' },
+      ],
+    },
+    {
+      id: 6,
+      title: 'hltv clone',
+      description: {
+        simple:
+          "Neofy it's a Spotify client alternative that is on its very early stage",
+        complete: '',
+      },
+      tags: [
+        { title: 'TS', bgColor: 'bg-blue-600' },
+        { title: 'REACT', bgColor: 'bg-blue-400' },
+        { title: 'CSS', bgColor: 'bg-sky-600' },
+      ],
+    },
+    {
+      id: 7,
+      title: 'Blog template',
+      description: {
+        simple:
+          "Neofy it's a Spotify client alternative that is on its very early stage",
+        complete: '',
+      },
+      tags: [
+        { title: 'TS', bgColor: 'bg-blue-600' },
+        { title: 'REACT', bgColor: 'bg-blue-400' },
+        { title: 'NEXTJS', bgColor: 'bg-neutral-600' },
+        { title: 'SCSS', bgColor: 'bg-pink-600' },
+      ],
+    },
+  ],
+
+  works: [
+    {
+      company: 'Cyan Agroanalytics',
+      position: 'React Front-End Developer',
+      dateRange: 'Oct. 2021 - Currently',
+      description:
+        'Desenvolvimento e otimização de interfaces, dashboards e \
+      ferramentas de acompanhamento para uma plataforma de \
+      inteligência geoclimática utilizando principalmente as \
+      tecnologias Javascript, React, Open Layers, Material-UI, Jest e Enzyme',
+    },
+    {
+      company: 'Tribunal de Contas da União (TCU)',
+      position: 'Estagiário',
+      dateRange: 'Jan. 2020 - Oct. 2021',
+      description:
+        'Desenvolvimento e manutenção de aplicações APEX, utilizando principalmente as tecnologias \
+        PLSQL, HTML, CSS, Javascript e jQuery.',
+    },
+  ],
+
   techs: [
     {
       title: 'Typescript',
@@ -51,136 +223,6 @@ export const DataInEnglish = {
     },
   ],
 
-  projects: [
-    {
-      id: 1,
-      title: 'Anilib',
-      description:
-        'Anilib its a local anime streaming platform, that uses AniList API as anime data source',
-      tags: [
-        { title: 'TS', bgColor: 'bg-orange-400' },
-        { title: 'REACT', bgColor: 'bg-blue-400' },
-        { title: 'NEXTJS', bgColor: 'bg-neutral-600' },
-        { title: 'TAILWINDCSS', bgColor: 'bg-blue-500' },
-        { title: 'NODEJS', bgColor: 'bg-emerald-600' },
-        { title: 'GRAPHQL', bgColor: 'bg-rose-600' },
-        { title: 'Anilist API', bgColor: 'bg-blue-700' },
-        { title: 'FFmpeg', bgColor: 'bg-emerald-700' },
-      ],
-      screenshots: [
-        './public/assets/images/screenshoots/anilib/anilib-1.png',
-        './public/assets/images/screenshoots/anilib/anilib-2.png',
-        './public/assets/images/screenshoots/anilib/anilib-3.png',
-        './public/assets/images/screenshoots/anilib/anilib-4.png',
-        './public/assets/images/screenshoots/anilib/anilib-5.png',
-        './public/assets/images/screenshoots/anilib/anilib-6.png',
-        './public/assets/images/screenshoots/anilib/anilib-7.png',
-        './public/assets/images/screenshoots/anilib/anilib-8.png',
-        './public/assets/images/screenshoots/anilib/anilib-9.png',
-      ],
-    },
-    {
-      id: 2,
-      title: 'Anipool',
-      description:
-        'Anilib its a local anime streaming platform, that uses AniList API as anime data source',
-      tags: [
-        { title: 'TS', bgColor: 'bg-blue-600' },
-        { title: 'REACT', bgColor: 'bg-blue-400' },
-        { title: 'NEXTJS', bgColor: 'bg-neutral-600' },
-        { title: 'TAILWINDCSS', bgColor: 'bg-blue-500' },
-        { title: 'ZUSTAND', bgColor: 'bg-neutral-700' },
-        { title: 'NODEJS', bgColor: 'bg-emerald-600' },
-        { title: 'GRAPHQL', bgColor: 'bg-rose-600' },
-        { title: 'Anilist API', bgColor: 'bg-blue-700' },
-        { title: 'DynamoDB', bgColor: 'bg-emerald-800' },
-      ],
-    },
-    {
-      id: 3,
-      title: 'Neofy',
-      description:
-        "Neofy it's a Spotify client alternative that is on its very early stage",
-      tags: [
-        { title: 'TS', bgColor: 'bg-blue-600' },
-        { title: 'REACT', bgColor: 'bg-blue-400' },
-        { title: 'NEXTJS', bgColor: 'bg-neutral-600' },
-        { title: 'SCSS', bgColor: 'bg-pink-600' },
-        { title: 'SPOTIFY API', bgColor: 'bg-green-600' },
-        { title: 'SPOTIFY SDK', bgColor: 'bg-green-600' },
-      ],
-    },
-    {
-      id: 4,
-      title: 'Mercury',
-      description: 'Mercury',
-      tags: [
-        { title: 'TS', bgColor: 'bg-blue-600' },
-        { title: 'REACT', bgColor: 'bg-blue-400' },
-        { title: 'NEXTJS', bgColor: 'bg-neutral-600' },
-        { title: 'MATERIAL-UI', bgColor: 'bg-sky-800' },
-        { title: 'NODEJS', bgColor: 'bg-emerald-600' },
-        { title: 'ExpressJS', bgColor: 'bg-neutral-500' },
-        { title: 'SQLITE', bgColor: 'bg-sky-500' },
-        { title: 'KnexJS', bgColor: 'bg-orange-500' },
-      ],
-      screenshots: [],
-    },
-    {
-      id: 5,
-      title: 'Spotify Landing Clone',
-      description: 'This its a clone of the Spotify website',
-      tags: [
-        { title: 'TS', bgColor: 'bg-blue-600' },
-        { title: 'REACT', bgColor: 'bg-blue-400' },
-        { title: 'CSS', bgColor: 'bg-blue-500' },
-        { title: 'REACT-ROUTER', bgColor: 'bg-red-600' },
-      ],
-    },
-    {
-      id: 6,
-      title: 'hltv clone',
-      description: 'This its a clone of the HLTV.org desktop homepage',
-      tags: [
-        { title: 'TS', bgColor: 'bg-blue-600' },
-        { title: 'REACT', bgColor: 'bg-blue-400' },
-        { title: 'CSS', bgColor: 'bg-sky-600' },
-      ],
-    },
-    {
-      id: 7,
-      title: 'Blog template',
-      description: 'This its a clone of the HLTV.org desktop homepage',
-      tags: [
-        { title: 'TS', bgColor: 'bg-blue-600' },
-        { title: 'REACT', bgColor: 'bg-blue-400' },
-        { title: 'NEXTJS', bgColor: 'bg-neutral-600' },
-        { title: 'SCSS', bgColor: 'bg-pink-600' },
-      ],
-    },
-  ],
-
-  works: [
-    {
-      company: 'Cyan Agroanalytics',
-      position: 'React Front-End Developer',
-      dateRange: 'Oct. 2021 - Currently',
-      description:
-        'Desenvolvimento e otimização de interfaces, dashboards e \
-      ferramentas de acompanhamento para uma plataforma de \
-      inteligência geoclimática utilizando principalmente as \
-      tecnologias Javascript, React, Open Layers, Material-UI, Jest e Enzyme',
-    },
-    {
-      company: 'Tribunal de Contas da União (TCU)',
-      position: 'Estagiário',
-      dateRange: 'Jan. 2020 - Oct. 2021',
-      description:
-        'Desenvolvimento e manutenção de aplicações APEX, utilizando principalmente as tecnologias \
-        PLSQL, HTML, CSS, Javascript e jQuery.',
-    },
-  ],
-
   contacts: [
     {
       title: 'Linkedin',
@@ -199,4 +241,11 @@ export const DataInEnglish = {
       iconURL: 'https://cdn.worldvectorlogo.com/logos/doc-icon-2000-03-.svg',
     },
   ],
+
+  projectModal: {
+    button: {
+      sourceCode: 'source code',
+      livePreview: 'live preview',
+    },
+  },
 };

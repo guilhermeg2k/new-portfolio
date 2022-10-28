@@ -4,7 +4,7 @@ import ProjectCard from './components/ProjectCard';
 import ProjectModal from './components/ProjectModal';
 import ToolCard from './components/ToolCard';
 import WorkExperienceCard from './components/WorkExperienceCard';
-import useData from './hooks/useData';
+import useTranslation from './hooks/useTranslation';
 
 const SectionTitle = ({ children }: { children: ReactNode }) => {
   return (
@@ -21,7 +21,7 @@ const Section = ({ children }: { children: ReactNode }) => {
 const App = () => {
   const [isProjectModalOpen, setIsProjectModalOpen] = useState(false);
   const [currentProjectId, setCurrentProjectId] = useState(1);
-  const { contacts, projects, techs, works } = useData();
+  const { home, contacts, projects, techs, works } = useTranslation();
 
   const onProjectClickHandler = (id: number) => {
     setCurrentProjectId(id);
@@ -37,21 +37,18 @@ const App = () => {
       />
       <main className="mx-auto  flex max-w-4xl flex-col gap-10 px-4 py-10 md:gap-16 md:pt-20 lg:pt-36">
         <Section>
-          <SectionTitle>Hi, I'm Guilherme </SectionTitle>
-          <p className="text-sm md:text-lg">
-            I'm a Full Stack Developer specialized in the Front-end side of web
-            development that loves to give life to interfaces
-          </p>
+          <SectionTitle>{home.introduction.title}</SectionTitle>
+          <p className="text-sm md:text-lg">{home.introduction.description}</p>
         </Section>
 
         <Section>
-          <SectionTitle>Some of my Projects</SectionTitle>
+          <SectionTitle>{home.projectsTitle}</SectionTitle>
           <ul className="grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-10">
             {projects.map(({ id, title, description, tags }) => (
               <ProjectCard
                 key={id}
                 title={title}
-                description={description}
+                description={description.simple}
                 tags={tags}
                 onClick={() => onProjectClickHandler(id)}
               />
@@ -60,7 +57,7 @@ const App = () => {
         </Section>
 
         <Section>
-          <SectionTitle>My Work Experience </SectionTitle>
+          <SectionTitle>{home.worksTitle}</SectionTitle>
           <ul className="grid grid-cols-1 gap-10 md:grid-cols-2">
             {works.map(({ position, description, company, dateRange }) => (
               <WorkExperienceCard
@@ -75,7 +72,7 @@ const App = () => {
         </Section>
 
         <Section>
-          <SectionTitle>My Favorite Techs </SectionTitle>
+          <SectionTitle>{home.techsTitle}</SectionTitle>
           <ul className="grid grid-cols-2 gap-y-3 gap-x-10 md:grid-cols-3">
             {techs.map(({ title, iconURL }) => (
               <ToolCard key={title} title={title} iconURL={iconURL} />
@@ -84,7 +81,7 @@ const App = () => {
         </Section>
 
         <Section>
-          <SectionTitle>My Links </SectionTitle>
+          <SectionTitle>{home.linksTitle}</SectionTitle>
           <ul className="flex flex-col gap-2">
             {contacts.map(({ title, iconURL }) => (
               <ContactCard key={title} title={title} iconURL={iconURL} />

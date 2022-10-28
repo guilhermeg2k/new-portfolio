@@ -1,5 +1,5 @@
 import { ReactNode, useState } from 'react';
-import useData from '../hooks/useData';
+import useTranslation from '../hooks/useTranslation';
 import Badge from './Badge';
 import CodeBracket from './icons/CodeBracket';
 import Eye from './icons/Eye';
@@ -25,7 +25,7 @@ interface ProjectModalProps {
 
 const ProjectModal = ({ open, onClose, projectId }: ProjectModalProps) => {
   const [isScreenshotsOpen, setIsScreenshotsOpen] = useState(false);
-  const { projects } = useData();
+  const { projects, projectModal } = useTranslation();
   const currentProject = projects.find((project) => project.id === projectId);
   const { id, title, description, tags, screenshots } = currentProject!;
 
@@ -53,20 +53,14 @@ const ProjectModal = ({ open, onClose, projectId }: ProjectModalProps) => {
             </Badge>
           ))}
         </div>
-        <div>
-          Anilib its a local anime streaming platform, that uses AniList API as
-          data source. This project was made because i wanted to be able to
-          stream my animes to multi devices, specially to my TV. It have been a
-          great experience building it, i'm learning a lot about video encoding,
-          streaming and i had a good time creating the Video Player.
-        </div>
+        <div>{description.complete}</div>
         <div className="flex gap-5">
           <Button>
-            Source Code
+            {projectModal.button.sourceCode}
             <Eye strokeWidth={2} />
           </Button>
           <Button>
-            Live Preview
+            {projectModal.button.livePreview}
             <CodeBracket strokeWidth={2} />
           </Button>
         </div>
