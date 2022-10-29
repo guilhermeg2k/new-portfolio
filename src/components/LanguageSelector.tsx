@@ -14,7 +14,7 @@ const LanguageSelector = () => {
         }`}
         onClick={() => setLanguage(Language.pt)}
       >
-        <img src="./public/assets/images/flags/br.svg" width="25px" />
+        <img src="/assets/images/flags/br.svg" width="25px" />
       </button>
       <button
         className={`${
@@ -22,7 +22,7 @@ const LanguageSelector = () => {
         }`}
         onClick={() => setLanguage(Language.en)}
       >
-        <img src="./public/assets/images/flags/gb.svg" width="25px" />
+        <img src="/assets/images/flags/gb.svg" width="25px" />
       </button>
     </div>
   );
