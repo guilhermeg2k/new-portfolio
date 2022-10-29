@@ -308,7 +308,7 @@ export default {
       link: 'mailto:contato@gnascimento.dev',
     },
     {
-      title: 'My Resume',
+      title: 'Currículo',
       iconURL: 'https://cdn.worldvectorlogo.com/logos/doc-icon-2000-03-.svg',
       link: 'https://docs.google.com/document/d/1DgyIHZsbtCandU6JTtxoyhgTC7SgdDpvW0SJlWKUj1s',
     },
