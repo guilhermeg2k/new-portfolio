@@ -34,7 +34,7 @@ const ProjectModal = ({ open, onClose, projectId }: ProjectModalProps) => {
     currentProject!;
 
   return (
-    <Modal title={title} open={open} onClose={onClose}>
+    <Modal title={title} open={open} onClose={onClose} disableBackdropClick>
       <div className="mt-5 flex flex-col items-center gap-3">
         <Screenshots
           open={isScreenshotsOpen}

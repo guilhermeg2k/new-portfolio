@@ -14,6 +14,47 @@ export default {
   projects: [
     {
       id: 1,
+      title: 'Anipool',
+      year: '2022',
+      description: {
+        simple:
+          'O Anipool é uma plataforma para criação quizes sobre animes e mangás',
+        complete:
+          "Anipool é uma plataforma para criar quizes de animes/mangás integrado ao anilist. Este projeto foi criado porque eu não consegui encontrar um bom lugar para criar quizes, como, 'Qual proximo anime devo assistir?' ou 'Qual melhor anime dessa temporada?'. Uma fato interessante sobre este projeto é que eu não consegui encontrar um simples seletor de data que funcionasse bem com o tailwind, sem ter que adicionar uma biblioteca inteira, então decidi construir um (como todo bom dev javascript kkkkkk). No momento, este projeto está produção, mas ainda tenho muitos planos para ele, como adicionar mais features, melhorar a UI e adicionar mais integrações com o anilist, por exemplo.",
+      },
+      tags: [
+        { title: 'TS', bgColor: 'bg-blue-600' },
+        { title: 'REACT', bgColor: 'bg-blue-400' },
+        { title: 'NEXTJS', bgColor: 'bg-neutral-600' },
+        { title: 'TAILWINDCSS', bgColor: 'bg-blue-500' },
+        { title: 'ZUSTAND', bgColor: 'bg-neutral-700' },
+        { title: 'NODEJS', bgColor: 'bg-emerald-600' },
+        { title: 'GRAPHQL', bgColor: 'bg-rose-600' },
+        { title: 'Anilist API', bgColor: 'bg-blue-700' },
+        { title: 'DynamoDB', bgColor: 'bg-emerald-800' },
+      ],
+      screenshots: [
+        '/assets/images/screenshots/anipool/anipool-1.webp',
+        '/assets/images/screenshots/anipool/anipool-2.webp',
+        '/assets/images/screenshots/anipool/anipool-3.webp',
+        '/assets/images/screenshots/anipool/anipool-4.webp',
+        '/assets/images/screenshots/anipool/anipool-5.webp',
+        '/assets/images/screenshots/anipool/anipool-6.webp',
+        '/assets/images/screenshots/anipool/anipool-7.webp',
+        '/assets/images/screenshots/anipool/anipool-8.webp',
+        '/assets/images/screenshots/anipool/anipool-9.webp',
+        '/assets/images/screenshots/anipool/anipool-10.webp',
+        '/assets/images/screenshots/anipool/anipool-11.webp',
+        '/assets/images/screenshots/anipool/anipool-12.webp',
+        '/assets/images/screenshots/anipool/anipool-13.webp',
+        '/assets/images/screenshots/anipool/anipool-14.webp',
+      ],
+      sourceURL: 'https://github.com/guilhermeg2k/anipool',
+      previewURL: 'https://anipool.app',
+
+    },
+    {
+      id: 2,
       title: 'Anilib',
       description: {
         simple:
@@ -46,46 +87,6 @@ export default {
         '/assets/images/screenshots/anilib/anilib-9.webp',
       ],
       sourceURL: 'https://github.com/guilhermeg2k/anilib',
-      previewURL: null,
-    },
-    {
-      id: 2,
-      title: 'Anipool',
-      year: '2022',
-      description: {
-        simple:
-          'O Anipool é uma plataforma para criação quizes de animes e mangás',
-        complete:
-          "Anipool é uma plataforma para criar quizes de animes/mangás integrado ao anilist. Este projeto foi criado porque eu não consegui encontrar um bom lugar para criar quizes, como, 'Qual proximo anime devo assistir?' ou 'Qual melhor anime dessa temporada?'. Uma fato interessante sobre este projeto é que eu não consegui encontrar um simples seletor de data que funcionasse bem com o tailwind, sem ter que adicionar uma biblioteca inteira, então decidi construir que um ficou muito bom.",
-      },
-      tags: [
-        { title: 'TS', bgColor: 'bg-blue-600' },
-        { title: 'REACT', bgColor: 'bg-blue-400' },
-        { title: 'NEXTJS', bgColor: 'bg-neutral-600' },
-        { title: 'TAILWINDCSS', bgColor: 'bg-blue-500' },
-        { title: 'ZUSTAND', bgColor: 'bg-neutral-700' },
-        { title: 'NODEJS', bgColor: 'bg-emerald-600' },
-        { title: 'GRAPHQL', bgColor: 'bg-rose-600' },
-        { title: 'Anilist API', bgColor: 'bg-blue-700' },
-        { title: 'DynamoDB', bgColor: 'bg-emerald-800' },
-      ],
-      screenshots: [
-        '/assets/images/screenshots/anipool/anipool-1.webp',
-        '/assets/images/screenshots/anipool/anipool-2.webp',
-        '/assets/images/screenshots/anipool/anipool-3.webp',
-        '/assets/images/screenshots/anipool/anipool-4.webp',
-        '/assets/images/screenshots/anipool/anipool-5.webp',
-        '/assets/images/screenshots/anipool/anipool-6.webp',
-        '/assets/images/screenshots/anipool/anipool-7.webp',
-        '/assets/images/screenshots/anipool/anipool-8.webp',
-        '/assets/images/screenshots/anipool/anipool-9.webp',
-        '/assets/images/screenshots/anipool/anipool-10.webp',
-        '/assets/images/screenshots/anipool/anipool-11.webp',
-        '/assets/images/screenshots/anipool/anipool-12.webp',
-        '/assets/images/screenshots/anipool/anipool-13.webp',
-        '/assets/images/screenshots/anipool/anipool-14.webp',
-      ],
-      sourceURL: 'https://github.com/guilhermeg2k/anipool',
       previewURL: null,
     },
     {
@@ -195,9 +196,9 @@ export default {
       title: 'Blog template',
       year: '2021',
       description: {
-        simple: 'Um template de blog simples e bacana',
+        simple: 'Um simples template para blog',
         complete:
-          'Um template de blog simples e bacana que eu construí enquanto aprendia NextJS. Esse foi um dos meus primeiros projetos utilizando Next.',
+          'Um template de blog simples que eu construí enquanto aprendia NextJS. Esse foi um dos meus primeiros projetos utilizando Next.',
       },
       tags: [
         { title: 'TS', bgColor: 'bg-blue-600' },
@@ -310,7 +311,7 @@ export default {
     {
       title: 'Currículo',
       iconURL: 'https://cdn.worldvectorlogo.com/logos/doc-icon-2000-03-.svg',
-      link: 'https://docs.google.com/document/d/1DgyIHZsbtCandU6JTtxoyhgTC7SgdDpvW0SJlWKUj1s',
+      link: 'https://docs.google.com/document/d/1dXzlqErCCiJNkNZK8ofmygAFQgap51Ln73kq2qdKr2I',
     },
   ],
 
