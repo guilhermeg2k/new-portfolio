@@ -1,11 +1,11 @@
-import { ReactNode, useState } from 'react';
-import LanguageSelector from './components/LanguageSelector';
-import LinkCard from './components/LinkCard';
-import ProjectCard from './components/ProjectCard';
-import ProjectModal from './components/ProjectModal';
-import ToolCard from './components/ToolCard';
-import WorkExperienceCard from './components/WorkExperienceCard';
-import useTranslation from './hooks/useTranslation';
+import { ReactNode, useState } from "react";
+import LanguageSelector from "./components/LanguageSelector";
+import LinkCard from "./components/LinkCard";
+import ProjectCard from "./components/ProjectCard";
+import ProjectModal from "./components/ProjectModal";
+import ToolCard from "./components/ToolCard";
+import WorkExperienceCard from "./components/WorkExperienceCard";
+import useTranslation from "./hooks/useTranslation";
 
 const SectionTitle = ({ children }: { children: ReactNode }) => {
   return (
@@ -75,7 +75,7 @@ const App = () => {
 
         <Section>
           <SectionTitle>{home.techsTitle}</SectionTitle>
-          <ul className="grid grid-cols-2 gap-y-3 gap-x-10 md:grid-cols-3">
+          <ul className="grid grid-flow-col grid-rows-6 md:grid-rows-3 gap-y-3 gap-x-10">
             {techs.map(({ title, iconURL }) => (
               <ToolCard key={title} title={title} iconURL={iconURL} />
             ))}

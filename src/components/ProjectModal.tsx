@@ -1,11 +1,11 @@
-import { ReactNode, useState } from 'react';
-import useTranslation from '../hooks/useTranslation';
-import Badge from './Badge';
-import CodeBracket from './icons/CodeBracket';
-import Eye from './icons/Eye';
-import ZoomIn from './icons/ZoomIn';
-import Modal from './Modal';
-import Screenshots from './Screenshots';
+import { ReactNode, useState } from "react";
+import useTranslation from "../hooks/useTranslation";
+import Badge from "./Badge";
+import CodeBracket from "./icons/CodeBracket";
+import Eye from "./icons/Eye";
+import ZoomIn from "./icons/ZoomIn";
+import Modal from "./Modal";
+import Screenshots from "./Screenshots";
 
 const Link = ({ children, href }: { children: ReactNode; href: string }) => {
   return (
@@ -27,23 +27,29 @@ interface ProjectModalProps {
 }
 
 const ProjectModal = ({ open, onClose, projectId }: ProjectModalProps) => {
-  const [isScreenshotsOpen, setIsScreenshotsOpen] = useState(false);
+  const [areScreenshotsOpen, setAreScreenshotsOpen] = useState(false);
   const { projects, projectModal } = useTranslation();
+
   const currentProject = projects.find((project) => project.id === projectId);
+
+  if (currentProject == null) {
+    return null;
+  }
+
   const { title, description, tags, screenshots, year, sourceURL, previewURL } =
-    currentProject!;
+    currentProject;
 
   return (
     <Modal title={title} open={open} onClose={onClose} disableBackdropClick>
       <div className="mt-5 flex flex-col items-center gap-3">
         <Screenshots
-          open={isScreenshotsOpen}
-          screenshots={screenshots!}
-          onClose={() => setIsScreenshotsOpen(false)}
+          open={areScreenshotsOpen}
+          screenshots={screenshots}
+          onClose={() => setAreScreenshotsOpen(false)}
         />
         <button
           className="relative cursor-zoom-in duration-150 ease-in-out hover:opacity-90"
-          onClick={() => setIsScreenshotsOpen(true)}
+          onClick={() => setAreScreenshotsOpen(true)}
         >
           <img
             src={screenshots![0]}
@@ -61,7 +67,7 @@ const ProjectModal = ({ open, onClose, projectId }: ProjectModalProps) => {
           ))}
         </div>
         <div className="self-start text-sm  text-orange-500">
-          <span className="font-semibold uppercase">{projectModal.year}:</span>{' '}
+          <span className="font-semibold uppercase">{projectModal.year}:</span>{" "}
           {year}
         </div>
         <div>{description.complete}</div>

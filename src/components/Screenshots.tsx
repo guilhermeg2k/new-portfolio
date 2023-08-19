@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react';
-import { createPortal } from 'react-dom';
-import CloseIcon from './icons/CloseIcon';
-import LeftArrow from './icons/LeftArrow';
-import RightArrow from './icons/RightArrow';
+import { useState } from "react";
+import { createPortal } from "react-dom";
+import CloseIcon from "./icons/CloseIcon";
+import LeftArrow from "./icons/LeftArrow";
+import RightArrow from "./icons/RightArrow";
 
 interface ScreenshotsProps {
   open: boolean;
@@ -36,10 +36,7 @@ const Screenshots = ({ open, onClose, screenshots }: ScreenshotsProps) => {
   }
 
   return createPortal(
-    <div
-      className="fixed top-0 left-0 z-50 h-screen w-screen bg-black"
-      onKeyDown={(event) => console.log(event)}
-    >
+    <div className="fixed top-0 left-0 z-50 h-screen w-screen bg-black">
       <div className="absolute flex w-full items-end justify-end px-2 pt-2 md:px-28 md:pt-10">
         <button onClick={onClose}>
           <CloseIcon className="flex h-10 w-10 fill-orange-200 duration-150 ease-in-out hover:fill-orange-400" />
@@ -52,7 +49,7 @@ const Screenshots = ({ open, onClose, screenshots }: ScreenshotsProps) => {
         <div className="flex h-full w-full flex-col items-center justify-center gap-2">
           <div className="min-w-[200px]">
             <img
-              src={screenshots![currentScreenshot]}
+              src={screenshots[currentScreenshot]}
               className="w-full"
               alt={`Screenshot ${currentScreenshot}`}
             />
