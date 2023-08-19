@@ -3,7 +3,7 @@ export default {
     introduction: {
       title: 'Hey, Seja Bem-vindo',
       description:
-        'Meu nome é Guilherme e esse é meu portfolio. Eu sou um desenvolvedor Web, formado em Ciência da Computação, especializado no Front-End e um dos meus maiores prazeres é dar vida a interfaces',
+        'Meu nome é Guilherme e esse é meu portfolio. Sou bacharel em Ciência da Computação e atualmente trabalho como desenvolvedor web, especializado principalmente no Front-End, um dos meus maiores prazeres é dar vida a interfaces',
     },
     projectsTitle: 'Alguns dos meus projetos',
     worksTitle: 'Experiência profissional',
@@ -229,7 +229,7 @@ export default {
         'Desenvolvimento e otimização de interfaces, dashboards e \
       ferramentas de acompanhamento para uma plataforma de \
       inteligência geoclimática utilizando principalmente as \
-      tecnologias Javascript, React, Material-UI, Open Layers, Jest e Enzyme',
+      tecnologias TypeScript, Javascript, Dart, React e Flutter',
     },
     {
       company: 'Tribunal de Contas da União (TCU)',

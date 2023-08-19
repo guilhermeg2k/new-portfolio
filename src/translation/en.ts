@@ -2,8 +2,7 @@ export default {
   home: {
     introduction: {
       title: "Hi, I'm Guilherme",
-      description:
-        'This is my portfolio and i am a Web Developer, graduated in Computer Science, specialized in Front-End and one of my greatest pleasures is to bring life to interfaces',
+      description: "This is my portfolio, i have a Bachelor's degree in Computer Science and I'm currently working as a web developer, specializing mainly on the Front-End one of my greatest pleasures is to bring interfaces to life",
     },
     projectsTitle: 'Some of my Projects',
     worksTitle: 'Work Experience',
@@ -223,12 +222,12 @@ export default {
   works: [
     {
       company: 'Cyan Agroanalytics',
-      position: 'React Front-End Developer',
+      position: 'Front-End Developer',
       dateRange: 'Oct. 2021 - Currently',
       description:
         'Development and optimization of interfaces, dashboards and \
         tracking tools for a geoclimatic intelligence platform, mainly using \
-        Javascript, React, Material-UI, Open Layers, Jest and Enzyme as technologies',
+        TypeScript, Javascript, Dart, React and Flutter as technologies',
     },
     {
       company: 'Tribunal de Contas da União (TCU)',
