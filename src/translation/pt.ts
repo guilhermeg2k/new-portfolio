@@ -65,7 +65,7 @@ export default {
       },
       year: "2022",
       tags: [
-        { title: "TS", bgColor: "bg-orange-400" },
+        { title: "TS", bgColor: "bg-blue-600" },
         { title: "REACT", bgColor: "bg-blue-400" },
         { title: "NEXTJS", bgColor: "bg-neutral-600" },
         { title: "TAILWINDCSS", bgColor: "bg-blue-500" },
