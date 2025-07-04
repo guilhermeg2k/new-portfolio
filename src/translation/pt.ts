@@ -3,7 +3,7 @@ export default {
     introduction: {
       title: "Hey, Seja Bem-vindo!",
       description:
-        'Meu nome é Guilherme e esse é meu portfolio. Sou bacharel em Ciência da Computação e atualmente trabalho como desenvolvedor web, especializado principalmente no Front-End, um dos meus maiores prazeres é dar vida a interfaces',
+        "Meu nome é Guilherme, sou bacharel em Ciência da Computação e atualmente trabalho como desenvolvedor web especializado no Front-End. Um dos meus maiores prazeres é dar vida a interfaces. Transformar ideias em experiências acessíveis e visualmente cativantes é o que mais me motiva no meu dia a dia como desenvolvedor",
     },
     projectsTitle: "Alguns dos meus projetos",
     worksTitle: "Experiência profissional",
