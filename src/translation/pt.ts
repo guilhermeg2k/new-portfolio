@@ -290,6 +290,20 @@ export default {
       iconURL:
         "https://upload.wikimedia.org/wikipedia/commons/3/3a/Neovim-mark.svg",
     },
+    {
+      title: "Svelte",
+      iconURL:
+        "https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg",
+    },
+    {
+      title: "BUN",
+      iconURL: "https://bun.sh/logo.svg",
+    },
+    {
+      title: "VITE",
+      iconURL:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vitejs-logo.svg/410px-Vitejs-logo.svg.png",
+    },
   ],
 
   links: [
