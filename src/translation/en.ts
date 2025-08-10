@@ -247,7 +247,8 @@ export default {
     },
     {
       title: "Javascript",
-      iconURL: "https://cdn.worldvectorlogo.com/logos/logo-javascript.svg",
+      iconURL:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/960px-JavaScript-logo.png?20120221235433",
     },
     {
       title: "React",
