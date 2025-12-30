@@ -49,7 +49,7 @@ export default {
         "/assets/images/screenshots/anipool/anipool-14.webp",
       ],
       sourceURL: "https://github.com/guilhermeg2k/anipool",
-      previewURL: "https://anipool.app",
+      previewURL: "https://anipool.g2k.app",
     },
     {
       id: 2,
