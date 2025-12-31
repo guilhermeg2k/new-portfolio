@@ -319,11 +319,6 @@ export default {
       link: "https://github.com/guilhermeg2k",
     },
     {
-      title: "Gmail",
-      iconURL: "https://cdn.worldvectorlogo.com/logos/gmail-icon.svg",
-      link: "mailto:contato@gnascimento.dev",
-    },
-    {
       title: "My Resume",
       iconURL: "https://cdn.worldvectorlogo.com/logos/doc-icon-2000-03-.svg",
       link: "https://docs.google.com/document/d/1DgyIHZsbtCandU6JTtxoyhgTC7SgdDpvW0SJlWKUj1s",
