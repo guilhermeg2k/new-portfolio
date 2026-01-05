@@ -5,11 +5,8 @@ interface ToolCardProps {
 
 const ToolCard = ({ title, iconURL }: ToolCardProps) => {
   return (
-    <li className="flex items-center gap-2">
-      <img src={iconURL} width="25px" />
-      <span className="font-semibold uppercase text-xs md:text-sm ">
-        {title}
-      </span>
+    <li className="flex h-10 w-10 items-center justify-center gap-2 rounded-md border-[1px] border-orange-400 p-2">
+      <img src={iconURL} alt={title} className="saturate-100" />
     </li>
   );
 };

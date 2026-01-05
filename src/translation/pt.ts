@@ -1,14 +1,29 @@
 export default {
+  main: {
+    role: {
+      title: "SOFTWARE",
+      subtitle: "ENGINEER",
+    },
+    description:
+      "Um dos meus maiores prazeres é dar vida a interfaces. Transformar ideias em experiências acessíveis e visualmente cativantes.",
+  },
   home: {
     introduction: {
-      title: "Hey, Seja Bem-vindo!",
+      title: "Guilherme Nascimento",
       description:
-        "Meu nome é Guilherme, sou bacharel em Ciência da Computação e atualmente trabalho como desenvolvedor web especializado no Front-End. Um dos meus maiores prazeres é dar vida a interfaces. Transformar ideias em experiências acessíveis e visualmente cativantes é o que mais me motiva no meu dia a dia como desenvolvedor",
+        "Bacharel em Ciência da Computação & Desenvolvedor Web. Apaixonado por construir ferramentas e explorar linguagens de programação.",
     },
-    projectsTitle: "Alguns dos meus projetos",
-    worksTitle: "Experiência profissional",
-    techsTitle: "Ferramentas favoritas",
     linksTitle: "Meus Links",
+  },
+  titles: {
+    experience: {
+      title: "+5 Anos",
+      subtitle: "De Experiência",
+    },
+    projects: {
+      title: "Projetos",
+      subtitle: "Recentes",
+    },
   },
 
   projects: [
@@ -229,6 +244,22 @@ export default {
       ferramentas de acompanhamento para uma plataforma de \
       inteligência geoclimática utilizando principalmente as \
       tecnologias TypeScript, Javascript, Dart, React e Flutter",
+      logoUrl: "/assets/images/logo/cyan.jpeg",
+      techStack: [
+        "Typescript",
+        "Javascript",
+        "React",
+        "Material-UI",
+        "OpenLayers",
+        "Zustand",
+        "Vite",
+        "Vitest",
+        "Jest/Vitest",
+        "Enzyme",
+        "React Testing Library",
+        "NodeJs",
+        "Flutter",
+      ],
     },
     {
       company: "Tribunal de Contas da União (TCU)",
@@ -237,6 +268,15 @@ export default {
       description:
         "Desenvolvimento e manutenção de aplicações APEX, utilizando principalmente as tecnologias \
         ORACLE APEX, PLSQL, HTML, CSS, Javascript e jQuery.",
+      logoUrl: "/assets/images/logo/tcu.jpg",
+      techStack: [
+        "Oracle Apex",
+        "PLSQL",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "JQuery",
+      ],
     },
   ],
 
@@ -244,11 +284,6 @@ export default {
     {
       title: "Typescript",
       iconURL: "https://cdn.worldvectorlogo.com/logos/typescript.svg",
-    },
-    {
-      title: "Javascript",
-      iconURL:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/960px-JavaScript-logo.png?20120221235433",
     },
     {
       title: "React",
@@ -265,10 +300,6 @@ export default {
     {
       title: "TailwindCSS",
       iconURL: "https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg",
-    },
-    {
-      title: "NextJS",
-      iconURL: "https://cdn.worldvectorlogo.com/logos/next-js.svg",
     },
     {
       title: "NodeJS",
@@ -292,11 +323,6 @@ export default {
         "https://upload.wikimedia.org/wikipedia/commons/3/3a/Neovim-mark.svg",
     },
     {
-      title: "Svelte",
-      iconURL:
-        "https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg",
-    },
-    {
       title: "BUN",
       iconURL: "https://bun.sh/logo.svg",
     },
@@ -304,6 +330,10 @@ export default {
       title: "VITE",
       iconURL:
         "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vitejs-logo.svg/410px-Vitejs-logo.svg.png",
+    },
+    {
+      title: "Zig",
+      iconURL: "https://avatars.githubusercontent.com/u/27973237?v=4",
     },
   ],
 

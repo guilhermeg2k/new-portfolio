@@ -1,6 +1,6 @@
-import { Dialog, Transition } from '@headlessui/react';
-import { Fragment } from 'react';
-import CloseIcon from './icons/CloseIcon';
+import { Dialog, Transition } from "@headlessui/react";
+import { Fragment } from "react";
+import CloseIcon from "./icons/CloseIcon";
 
 interface ModalProps {
   title?: string;
@@ -11,7 +11,7 @@ interface ModalProps {
 }
 
 const Modal = ({
-  title = '',
+  title = "",
   open = true,
   onClose = () => {},
   disableBackdropClick = false,
@@ -47,7 +47,7 @@ const Modal = ({
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <Dialog.Panel className="w-full max-w-2xl transform overflow-hidden rounded-sm bg-white p-6 text-left align-middle shadow-xl transition-all">
+              <Dialog.Panel className="w-full max-w-2xl transform overflow-hidden rounded-sm bg-neutral-800 p-6 text-left align-middle shadow-xl transition-all">
                 <Dialog.Title
                   as="div"
                   className="flex items-center justify-between"
@@ -59,7 +59,7 @@ const Modal = ({
                     <CloseIcon className="h-6 w-6" stroke="red" />
                   </button>
                 </Dialog.Title>
-                <div className="mt-2 text-neutral-600">{children}</div>
+                <div className="mt-2 text-orange-100">{children}</div>
               </Dialog.Panel>
             </Transition.Child>
           </div>

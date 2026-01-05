@@ -1,38 +1,37 @@
-import Badge from './Badge';
-
 interface ProjectCardProps {
   title: string;
   description: string;
-  tags: Array<{ title: string; bgColor: string }>;
-  onClick: () => void;
+  imgUrl: string;
+  href: string;
 }
 
 const ProjectCard = ({
   title,
   description,
-  tags,
-  onClick,
+  imgUrl,
+  href,
 }: ProjectCardProps) => {
   return (
-    <li
-      className="flex cursor-pointer flex-col gap-2 transition delay-75 ease-in-out hover:scale-105"
-      onClick={onClick}
+    <a
+      className="flex h-24 cursor-pointer flex-col gap-2 rounded-md border-0 transition delay-75 ease-in-out hover:scale-105"
+      href={href}
+      rel="noopener"
+      target="_blank"
     >
-      <div className="flex flex-col gap-2">
-        <h2 className="font-cinzel text-base font-semibold text-orange-400 md:text-xl">
-          {title}
-        </h2>
-        <div className="flex flex-wrap gap-2">
-          {tags.map(({ bgColor, title }) => (
-            <Badge key={title} bgColor={bgColor}>
-              {title}
-            </Badge>
-          ))}
+      <div className="relative flex h-full w-full flex-col justify-end overflow-hidden rounded-lg">
+        <img
+          src={imgUrl}
+          alt="Background"
+          className="absolute h-full w-full scale-110 rounded-lg object-cover blur-md"
+        />
+        <div className="z-10 h-full w-full self-end bg-stone-900 bg-opacity-50 backdrop-blur-3xl">
+          <div className="z-10 flex flex-col gap-2 p-2">
+            <h2 className="text-4xl font-semibold text-orange-200">{title}</h2>
+            <p className="text-base">{description}</p>
+          </div>
         </div>
       </div>
-
-      <p className="text-sm md:text-base">{description}</p>
-    </li>
+    </a>
   );
 };
 

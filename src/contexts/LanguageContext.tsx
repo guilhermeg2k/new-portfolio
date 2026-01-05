@@ -1,8 +1,8 @@
-import { createContext, ReactNode, useState } from 'react';
+import { createContext, ReactNode, useState } from "react";
 
 export enum Language {
-  pt = 'pt',
-  en = 'en',
+  pt = "pt",
+  en = "en",
 }
 
 interface LanguageContextData {
@@ -13,7 +13,7 @@ interface LanguageContextData {
 export const LanguageContext = createContext({} as LanguageContextData);
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [language, setLanguage] = useState(Language.pt);
+  const [language, setLanguage] = useState(Language.en);
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage }}>

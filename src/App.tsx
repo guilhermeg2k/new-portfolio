@@ -1,114 +1,108 @@
-import { ReactNode, useState } from "react";
 import LanguageSelector from "./components/LanguageSelector";
-import LinkCard from "./components/LinkCard";
 import ProjectCard from "./components/ProjectCard";
-import ProjectModal from "./components/ProjectModal";
+import ShootingStars from "./components/shooting-stars/ShootingStars";
 import ToolCard from "./components/ToolCard";
 import WorkExperienceCard from "./components/WorkExperienceCard";
 import useTranslation from "./hooks/useTranslation";
-
-const SectionTitle = ({ children }: { children: ReactNode }) => {
-  return (
-    <h1 className="font-cinzel text-xl font-bold text-orange-600 md:text-2xl">
-      {children}
-    </h1>
-  );
-};
-
-const Section = ({ children }: { children: ReactNode }) => {
-  return <section className="flex flex-col gap-5">{children}</section>;
-};
+import Aside from "./components/Aside";
+import Section from "./components/Section";
 
 const App = () => {
-  const [isProjectModalOpen, setIsProjectModalOpen] = useState(false);
-  const [currentProjectId, setCurrentProjectId] = useState(1);
-  const { home, links, projects, techs, works, footer } = useTranslation();
-
-  const onProjectClickHandler = (id: number) => {
-    setCurrentProjectId(id);
-    setIsProjectModalOpen(true);
-  };
+  const { projects, works, footer, techs, main, titles } = useTranslation();
 
   return (
-    <div className="h-full w-full bg-stone-900 text-orange-100">
-      <LanguageSelector />
-      <ProjectModal
-        open={isProjectModalOpen}
-        onClose={() => setIsProjectModalOpen(false)}
-        projectId={currentProjectId}
-      />
-      <main className="mx-auto  flex max-w-4xl flex-col gap-10 px-4 py-10 md:gap-16 md:pt-20 lg:pt-36">
-        <Section>
-          <SectionTitle>{home.introduction.title}</SectionTitle>
-          <p className="text-sm md:text-lg">{home.introduction.description}</p>
-        </Section>
+    <>
+      <ShootingStars />
+      <div className="h-full w-full text-orange-100">
+        <main className="mx-auto flex w-full flex-col gap-8 px-4 pt-8 md:max-w-[90rem] md:pt-16 lg:flex-row lg:gap-10 lg:pt-32">
+          <Aside />
+          <div className="mt-0 flex flex-col gap-16 px-5 lg:mt-10">
+            <div className="flex flex-col gap-4">
+              <span className="text-9xl font-semibold">{main.role.title}</span>
+              <span className="text-8xl font-semibold text-orange-300">
+                {main.role.subtitle}
+              </span>
+              <span className="text-lg text-orange-200 lg:max-w-sm">
+                {main.description}
+              </span>
+              <Section>
+                <ul className="mt-5 flex flex-wrap gap-4">
+                  {techs.map(({ title, iconURL }) => (
+                    <ToolCard key={title} title={title} iconURL={iconURL} />
+                  ))}
+                </ul>
+              </Section>
+            </div>
+            <Section>
+              <div className="flex flex-col">
+                <span className="text-7xl uppercase">
+                  {titles.experience.title}
+                </span>
+                <span className="text-5xl uppercase text-orange-300">
+                  {titles.experience.subtitle}
+                </span>
+              </div>
+              <ul className="flex flex-col gap-4 lg:max-w-2xl">
+                {works.map(
+                  ({
+                    position,
+                    description,
+                    company,
+                    dateRange,
+                    techStack,
+                  }) => (
+                    <WorkExperienceCard
+                      key={position + company}
+                      techStacks={techStack}
+                      position={position}
+                      company={company}
+                      description={description}
+                      dateRange={dateRange}
+                    />
+                  )
+                )}
+              </ul>
+            </Section>
+            <Section>
+              <div className="flex flex-col">
+                <span className="text-7xl uppercase">
+                  {titles.projects.title}
+                </span>
+                <span className="text-5xl uppercase text-orange-300">
+                  {titles.projects.subtitle}
+                </span>
+              </div>
+              <ul className="flex w-full flex-col gap-10">
+                {projects.map(
+                  ({ id, title, sourceURL, description, screenshots }) => (
+                    <ProjectCard
+                      key={id}
+                      title={title}
+                      description={description.simple}
+                      href={sourceURL}
+                      imgUrl={screenshots[0]}
+                    />
+                  )
+                )}
+              </ul>
+            </Section>
 
-        <Section>
-          <SectionTitle>{home.projectsTitle}</SectionTitle>
-          <ul className="grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-10">
-            {projects.map(({ id, title, description, tags }) => (
-              <ProjectCard
-                key={id}
-                title={title}
-                description={description.simple}
-                tags={tags}
-                onClick={() => onProjectClickHandler(id)}
-              />
-            ))}
-          </ul>
-        </Section>
-
-        <Section>
-          <SectionTitle>{home.worksTitle}</SectionTitle>
-          <ul className="grid grid-cols-1 gap-10 md:grid-cols-2">
-            {works.map(({ position, description, company, dateRange }) => (
-              <WorkExperienceCard
-                key={position + company}
-                position={position}
-                company={company}
-                description={description}
-                dateRange={dateRange}
-              />
-            ))}
-          </ul>
-        </Section>
-
-        <Section>
-          <SectionTitle>{home.techsTitle}</SectionTitle>
-          <ul className="grid grid-flow-col grid-rows-6 md:grid-rows-3 gap-y-3 gap-x-10">
-            {techs.map(({ title, iconURL }) => (
-              <ToolCard key={title} title={title} iconURL={iconURL} />
-            ))}
-          </ul>
-        </Section>
-
-        <Section>
-          <SectionTitle>{home.linksTitle}</SectionTitle>
-          <ul className="flex flex-col gap-2">
-            {links.map(({ title, iconURL, link }) => (
-              <LinkCard
-                key={title}
-                title={title}
-                iconURL={iconURL}
-                href={link}
-              />
-            ))}
-          </ul>
-        </Section>
-
-        <footer className="flex w-full flex-col justify-center gap-1 text-xs  md:justify-start">
-          <a
-            className="font-semibold uppercase duration-200 ease-in-out hover:text-orange-500"
-            href="https://github.com/guilhermeg2k/new-portfolio"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {footer.createdBy}
-          </a>
-          <span className="uppercase">{footer.iconsBy}</span>
-        </footer>
-      </main>
-    </div>
+            <footer className="flex w-full flex-col justify-center gap-1 pb-4 text-xs lg:justify-start">
+              <a
+                className="font-semibold uppercase duration-200 ease-in-out hover:text-orange-500"
+                href="https://github.com/guilhermeg2k/new-portfolio"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {footer.createdBy}
+              </a>
+              <span className="uppercase">{footer.iconsBy}</span>
+            </footer>
+            <LanguageSelector />
+          </div>
+        </main>
+      </div>
+    </>
   );
 };
 

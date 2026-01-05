@@ -1,17 +1,45 @@
 export default {
+  main: {
+    role: {
+      title: "SOFTWARE",
+      subtitle: "ENGINEER",
+    },
+    description:
+      "One of my greatest pleasures is bringing interfaces to life. Turning ideas into accessible and visually engaging experiences.",
+  },
   home: {
     introduction: {
-      title: "Hey, Welcome!",
+      title: "Guilherme Nascimento",
       description:
-        "My name is Guilherme, I'm a Computer Science graduate and currently work as a web developer specialized in Front-End. One of my greatest pleasures is bringing interfaces to life. Turning ideas into accessible and visually engaging experiences is what motivates me the most in my day-to-day work as a developer.",
+        "Computer Science Graduate & Web Developer. Passionate about building tools and exploring programming languages.",
     },
-    projectsTitle: "Some of my Projects",
-    worksTitle: "Work Experience",
-    techsTitle: "Favorite Techs",
     linksTitle: "My Links",
+  },
+  titles: {
+    experience: {
+      title: "+5 Years",
+      subtitle: "Of Experience",
+    },
+    projects: {
+      title: "Recent",
+      subtitle: "Projects",
+    },
   },
 
   projects: [
+    {
+      id: 8,
+      title: "Dusk Lang",
+      year: "2025",
+      description: {
+        simple:
+          "A small/lightweight statically typed scripting language inspired by Lua, Python, Zig & Rust",
+        complete:
+          "A simple blog template that i built while getting into NextJS world. It was one of my first projects using Next. I made it specially to study about compilers and practice writing code in zig",
+      },
+      screenshots: ["/assets/images/screenshots/dusk/1.png"],
+      sourceURL: "https://github.com/guilhermeg2k/dusk-lang",
+    },
     {
       id: 1,
       title: "Anipool",
@@ -21,33 +49,7 @@ export default {
         complete:
           "Anipool is a platform to create anime/manga quizes that is integrated with anilist. This project was created because i could not find a good place to create anime quizes like 'Who anime should i watch next?' or 'In your opinion which is the best anime of this season'. One thing about this project is that i could not find a dead simple date picker that works fine with tailwind without having to add a whole library around it, so i decided to build one (As we all do right? haha). Right now this project is released and on production, but i have a lot of plans for it, like adding more features, improving the UI and adding more integrations with anilist.",
       },
-      tags: [
-        { title: "TS", bgColor: "bg-blue-600" },
-        { title: "REACT", bgColor: "bg-blue-400" },
-        { title: "NEXTJS", bgColor: "bg-neutral-600" },
-        { title: "TAILWINDCSS", bgColor: "bg-blue-500" },
-        { title: "ZUSTAND", bgColor: "bg-neutral-700" },
-        { title: "NODEJS", bgColor: "bg-emerald-600" },
-        { title: "GRAPHQL", bgColor: "bg-rose-600" },
-        { title: "Anilist API", bgColor: "bg-blue-700" },
-        { title: "DynamoDB", bgColor: "bg-emerald-800" },
-      ],
-      screenshots: [
-        "/assets/images/screenshots/anipool/anipool-1.webp",
-        "/assets/images/screenshots/anipool/anipool-2.webp",
-        "/assets/images/screenshots/anipool/anipool-3.webp",
-        "/assets/images/screenshots/anipool/anipool-4.webp",
-        "/assets/images/screenshots/anipool/anipool-5.webp",
-        "/assets/images/screenshots/anipool/anipool-6.webp",
-        "/assets/images/screenshots/anipool/anipool-7.webp",
-        "/assets/images/screenshots/anipool/anipool-8.webp",
-        "/assets/images/screenshots/anipool/anipool-9.webp",
-        "/assets/images/screenshots/anipool/anipool-10.webp",
-        "/assets/images/screenshots/anipool/anipool-11.webp",
-        "/assets/images/screenshots/anipool/anipool-12.webp",
-        "/assets/images/screenshots/anipool/anipool-13.webp",
-        "/assets/images/screenshots/anipool/anipool-14.webp",
-      ],
+      screenshots: ["/assets/images/screenshots/anipool/anipool-1.webp"],
       sourceURL: "https://github.com/guilhermeg2k/anipool",
       previewURL: "https://anipool.g2k.app",
     },
@@ -75,17 +77,7 @@ export default {
         { title: "Anilist API", bgColor: "bg-blue-700" },
         { title: "FFmpeg", bgColor: "bg-emerald-700" },
       ],
-      screenshots: [
-        "/assets/images/screenshots/anilib/anilib-1.webp",
-        "/assets/images/screenshots/anilib/anilib-2.webp",
-        "/assets/images/screenshots/anilib/anilib-3.webp",
-        "/assets/images/screenshots/anilib/anilib-4.webp",
-        "/assets/images/screenshots/anilib/anilib-5.webp",
-        "/assets/images/screenshots/anilib/anilib-6.webp",
-        "/assets/images/screenshots/anilib/anilib-7.webp",
-        "/assets/images/screenshots/anilib/anilib-8.webp",
-        "/assets/images/screenshots/anilib/anilib-9.webp",
-      ],
+      screenshots: ["/assets/images/screenshots/anilib/anilib-1.webp"],
       sourceURL: "https://github.com/guilhermeg2k/anilib",
       previewURL: null,
     },
@@ -115,33 +107,6 @@ export default {
       previewURL: "https://neofy.vercel.app/",
     },
     {
-      id: 4,
-      title: "Mercury",
-      year: "2022",
-      description: {
-        simple: "Mercury is a really simple CI/CD web platform",
-        complete:
-          "Mercury is a really simple CI/CD web platform. Before of creating this project me and my friends were using Jenkins to automate our Discord Bot's deploy, but Jenkins by itself was taking too much ram of our humble VPS, so i decided to made a more simplistic platform that would fill our needs and take less resources from our machine.",
-      },
-      tags: [
-        { title: "TS", bgColor: "bg-blue-600" },
-        { title: "REACT", bgColor: "bg-blue-400" },
-        { title: "NEXTJS", bgColor: "bg-neutral-600" },
-        { title: "MATERIAL-UI", bgColor: "bg-sky-800" },
-        { title: "NODEJS", bgColor: "bg-emerald-600" },
-        { title: "ExpressJS", bgColor: "bg-neutral-500" },
-        { title: "SQLITE", bgColor: "bg-sky-500" },
-        { title: "KnexJS", bgColor: "bg-orange-500" },
-      ],
-      screenshots: [
-        "/assets/images/screenshots/mercury/mercury-1.webp",
-        "/assets/images/screenshots/mercury/mercury-2.webp",
-        "/assets/images/screenshots/mercury/mercury-3.webp",
-      ],
-      sourceURL: "https://github.com/Manquit-Devs/mercury_f",
-      previewURL: null,
-    },
-    {
       id: 5,
       title: "Spotify Landing Clone",
       year: "2021",
@@ -158,14 +123,6 @@ export default {
       ],
       screenshots: [
         "/assets/images/screenshots/spotify-clone/spotify-clone-1.webp",
-        "/assets/images/screenshots/spotify-clone/spotify-clone-2.webp",
-        "/assets/images/screenshots/spotify-clone/spotify-clone-3.webp",
-        "/assets/images/screenshots/spotify-clone/spotify-clone-4.webp",
-        "/assets/images/screenshots/spotify-clone/spotify-clone-5.webp",
-        "/assets/images/screenshots/spotify-clone/spotify-clone-6.webp",
-        "/assets/images/screenshots/spotify-clone/spotify-clone-7.webp",
-        "/assets/images/screenshots/spotify-clone/spotify-clone-8.webp",
-        "/assets/images/screenshots/spotify-clone/spotify-clone-9.webp",
       ],
       sourceURL: "https://github.com/guilhermeg2k/spotify-clone",
       previewURL: "https://guilhermeg2k.github.io/spotify-clone/",
@@ -179,15 +136,7 @@ export default {
         complete:
           "This is a clone of hltv.org desktop home page. I really enjoy playing CSGO so i thought it would be fun to made a clone of this website which is the biggest competitive news portal of the game.",
       },
-      tags: [
-        { title: "TS", bgColor: "bg-blue-600" },
-        { title: "REACT", bgColor: "bg-blue-400" },
-        { title: "CSS", bgColor: "bg-sky-600" },
-      ],
-      screenshots: [
-        "/assets/images/screenshots/hltv-clone/hltv-clone-1.webp",
-        "/assets/images/screenshots/hltv-clone/hltv-clone-2.webp",
-      ],
+      screenshots: ["/assets/images/screenshots/hltv-clone/hltv-clone-1.webp"],
       sourceURL: "https://github.com/guilhermeg2k/hltv-clone",
       previewURL: "https://guilhermeg2k.github.io/hltv-clone/build/",
     },
@@ -197,26 +146,37 @@ export default {
       year: "2021",
       description: {
         simple: "A simple blog template",
-        complete:
-          "A simple blog template that i built while getting into NextJS world. It was one of my first projects using Next.",
+      },
+      screenshots: [
+        "/assets/images/screenshots/blog-template/blog-template-1.webp",
+      ],
+      sourceURL: "https://github.com/guilhermeg2k/blog-template",
+      previewURL: "https://blog-template-guilhermeg2k.vercel.app/",
+    },
+    {
+      id: 4,
+      title: "Mercury",
+      year: "2022",
+      description: {
+        simple: "Mercury is a really simple CI/CD web platform",
       },
       tags: [
         { title: "TS", bgColor: "bg-blue-600" },
         { title: "REACT", bgColor: "bg-blue-400" },
         { title: "NEXTJS", bgColor: "bg-neutral-600" },
-        { title: "SCSS", bgColor: "bg-pink-600" },
+        { title: "MATERIAL-UI", bgColor: "bg-sky-800" },
+        { title: "NODEJS", bgColor: "bg-emerald-600" },
+        { title: "ExpressJS", bgColor: "bg-neutral-500" },
+        { title: "SQLITE", bgColor: "bg-sky-500" },
+        { title: "KnexJS", bgColor: "bg-orange-500" },
       ],
       screenshots: [
-        "/assets/images/screenshots/blog-template/blog-template-1.webp",
-        "/assets/images/screenshots/blog-template/blog-template-2.webp",
-        "/assets/images/screenshots/blog-template/blog-template-3.webp",
-        "/assets/images/screenshots/blog-template/blog-template-4.webp",
-        "/assets/images/screenshots/blog-template/blog-template-5.webp",
-        "/assets/images/screenshots/blog-template/blog-template-6.webp",
-        "/assets/images/screenshots/blog-template/blog-template-7.webp",
+        "/assets/images/screenshots/mercury/mercury-1.webp",
+        "/assets/images/screenshots/mercury/mercury-3.webp",
+        "/assets/images/screenshots/mercury/mercury-2.webp",
       ],
-      sourceURL: "https://github.com/guilhermeg2k/blog-template",
-      previewURL: "https://blog-template-guilhermeg2k.vercel.app/",
+      sourceURL: "https://github.com/Manquit-Devs/mercury_f",
+      previewURL: null,
     },
   ],
 
@@ -226,17 +186,39 @@ export default {
       position: "Front-End Developer",
       dateRange: "Oct. 2021 - Currently",
       description:
-        "Development and optimization of interfaces, dashboards and \
-        tracking tools for a geoclimatic intelligence platform, mainly using \
-        TypeScript, Javascript, Dart, React and Flutter as technologies",
+        "Desenvolvimento e otimização de interfaces, painéis e ferramentas de monitoramento para uma plataforma de inteligência geoclimática, com participação ativa em iniciativas de alto impacto, como a migração de infraestrutura da AWS para o GCP.",
+      logoUrl: "/assets/images/logo/cyan.png",
+      techStack: [
+        "Typescript",
+        "Javascript",
+        "React",
+        "Material-UI",
+        "OpenLayers",
+        "Zustand",
+        "Vite",
+        "Vitest",
+        "Jest/Vitest",
+        "Enzyme",
+        "React Testing Library",
+        "NodeJs",
+        "Flutter",
+      ],
     },
     {
       company: "Tribunal de Contas da União (TCU)",
       position: "Intern",
       dateRange: "Jan. 2020 - Oct. 2021",
       description:
-        "Development and maintenance of ORACLE APEX applications, mainly using the technologies \
-        Oracle APEX, PLSQL, HTML, CSS, Javascript and jQuery.",
+        "Development and maintenance of ORACLE APEX applications and dashboards.",
+      logoUrl: "/assets/images/logo/tcu.png",
+      techStack: [
+        "Oracle Apex",
+        "PLSQL",
+        "JavaScript",
+        "JQuery",
+        "HTML",
+        "CSS",
+      ],
     },
   ],
 
@@ -244,11 +226,6 @@ export default {
     {
       title: "Typescript",
       iconURL: "https://cdn.worldvectorlogo.com/logos/typescript.svg",
-    },
-    {
-      title: "Javascript",
-      iconURL:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/960px-JavaScript-logo.png?20120221235433",
     },
     {
       title: "React",
@@ -265,10 +242,6 @@ export default {
     {
       title: "TailwindCSS",
       iconURL: "https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg",
-    },
-    {
-      title: "NextJS",
-      iconURL: "https://cdn.worldvectorlogo.com/logos/next-js.svg",
     },
     {
       title: "NodeJS",
@@ -292,11 +265,6 @@ export default {
         "https://upload.wikimedia.org/wikipedia/commons/3/3a/Neovim-mark.svg",
     },
     {
-      title: "Svelte",
-      iconURL:
-        "https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg",
-    },
-    {
       title: "BUN",
       iconURL: "https://bun.sh/logo.svg",
     },
@@ -304,6 +272,10 @@ export default {
       title: "VITE",
       iconURL:
         "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vitejs-logo.svg/410px-Vitejs-logo.svg.png",
+    },
+    {
+      title: "Zig",
+      iconURL: "https://avatars.githubusercontent.com/u/27973237?v=4",
     },
   ],
 

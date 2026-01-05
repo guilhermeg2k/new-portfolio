@@ -12,12 +12,9 @@ const LinkCard = ({ title, iconURL, href }: ContactCardProps) => {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <li className="flex items-center gap-2">
-        <div className="rounded-sm bg-white">
-          <img className="p-1" src={iconURL} width="23px" />
-        </div>
-        <span className="text-sm md:text-base">{title}</span>
-      </li>
+      <div className="rounded-md bg-white">
+        <img className="p-1" src={iconURL} width="30px" />
+      </div>
     </a>
   );
 };
