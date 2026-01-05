@@ -10,7 +10,7 @@ const Aside = () => {
       <div className="flex h-full flex-col gap-6 rounded-md px-5">
         <div className="flex flex-col gap-3">
           <div className="flex flex-col gap-1">
-            <h1 className="font-cinzel text-5xl font-bold text-orange-600">
+            <h1 className="font-cinzel text-3xl font-bold text-orange-600 md:text-5xl">
               {home.introduction.title},
             </h1>
           </div>

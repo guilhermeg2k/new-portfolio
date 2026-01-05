@@ -26,7 +26,9 @@ const ProjectCard = ({
         />
         <div className="z-10 h-full w-full self-end bg-stone-900 bg-opacity-50 backdrop-blur-3xl">
           <div className="z-10 flex flex-col gap-2 p-2">
-            <h2 className="text-4xl font-semibold text-orange-200">{title}</h2>
+            <h2 className="text-3xl font-semibold text-orange-200 md:text-4xl">
+              {title}
+            </h2>
             <p className="text-base">{description}</p>
           </div>
         </div>

@@ -18,11 +18,13 @@ const App = () => {
           <Aside />
           <div className="mt-0 flex flex-col gap-16 px-5 lg:mt-10">
             <div className="flex flex-col gap-4">
-              <span className="text-9xl font-semibold">{main.role.title}</span>
-              <span className="text-8xl font-semibold text-orange-300">
+              <span className="text-5xl font-semibold md:text-9xl">
+                {main.role.title}
+              </span>
+              <span className="text-4xl font-semibold text-orange-300 md:text-8xl">
                 {main.role.subtitle}
               </span>
-              <span className="text-lg text-orange-200 lg:max-w-sm">
+              <span className="text-base text-orange-200 lg:max-w-sm">
                 {main.description}
               </span>
               <Section>
@@ -35,10 +37,10 @@ const App = () => {
             </div>
             <Section>
               <div className="flex flex-col">
-                <span className="text-7xl uppercase">
+                <span className="text-5xl uppercase md:text-7xl">
                   {titles.experience.title}
                 </span>
-                <span className="text-5xl uppercase text-orange-300">
+                <span className="text-3xl uppercase text-orange-300 md:text-5xl">
                   {titles.experience.subtitle}
                 </span>
               </div>
@@ -65,10 +67,10 @@ const App = () => {
             </Section>
             <Section>
               <div className="flex flex-col">
-                <span className="text-7xl uppercase">
+                <span className="text-5xl uppercase md:text-7xl">
                   {titles.projects.title}
                 </span>
-                <span className="text-5xl uppercase text-orange-300">
+                <span className="text-3xl uppercase text-orange-300 md:text-5xl">
                   {titles.projects.subtitle}
                 </span>
               </div>

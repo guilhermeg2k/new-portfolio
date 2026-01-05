@@ -34,8 +34,6 @@ export default {
       description: {
         simple:
           "A small/lightweight statically typed scripting language inspired by Lua, Python, Zig & Rust",
-        complete:
-          "A simple blog template that i built while getting into NextJS world. It was one of my first projects using Next. I made it specially to study about compilers and practice writing code in zig",
       },
       screenshots: ["/assets/images/screenshots/dusk/1.png"],
       sourceURL: "https://github.com/guilhermeg2k/dusk-lang",
@@ -46,8 +44,6 @@ export default {
       year: "2022",
       description: {
         simple: "Anipool is a platform to create anime/manga quizes",
-        complete:
-          "Anipool is a platform to create anime/manga quizes that is integrated with anilist. This project was created because i could not find a good place to create anime quizes like 'Who anime should i watch next?' or 'In your opinion which is the best anime of this season'. One thing about this project is that i could not find a dead simple date picker that works fine with tailwind without having to add a whole library around it, so i decided to build one (As we all do right? haha). Right now this project is released and on production, but i have a lot of plans for it, like adding more features, improving the UI and adding more integrations with anilist.",
       },
       screenshots: ["/assets/images/screenshots/anipool/anipool-1.webp"],
       sourceURL: "https://github.com/guilhermeg2k/anipool",
@@ -59,26 +55,21 @@ export default {
       description: {
         simple:
           "Anilib is a local anime streaming platform that uses AniList API as anime data source",
-        complete:
-          "Anilib is a local anime streaming platform that uses AniList API as\
-        data source. This project was made because i wanted to be able to\
-        stream my animes to multi devices, specially to my TV. It have been a\
-        great experience building it, i'm learning a lot about video encoding,\
-        streaming and i had a good time creating the Video Player.",
       },
       year: "2022",
-      tags: [
-        { title: "TS", bgColor: "bg-blue-600" },
-        { title: "REACT", bgColor: "bg-blue-400" },
-        { title: "NEXTJS", bgColor: "bg-neutral-600" },
-        { title: "TAILWINDCSS", bgColor: "bg-blue-500" },
-        { title: "NODEJS", bgColor: "bg-emerald-600" },
-        { title: "GRAPHQL", bgColor: "bg-rose-600" },
-        { title: "Anilist API", bgColor: "bg-blue-700" },
-        { title: "FFmpeg", bgColor: "bg-emerald-700" },
-      ],
       screenshots: ["/assets/images/screenshots/anilib/anilib-1.webp"],
       sourceURL: "https://github.com/guilhermeg2k/anilib",
+      previewURL: null,
+    },
+    {
+      id: 4,
+      title: "Mercury",
+      year: "2022",
+      description: {
+        simple: "Mercury is a really simple CI/CD web platform",
+      },
+      screenshots: ["/assets/images/screenshots/mercury/mercury-1.webp"],
+      sourceURL: "https://github.com/Manquit-Devs/mercury_f",
       previewURL: null,
     },
     {
@@ -87,22 +78,9 @@ export default {
       year: "2021",
       description: {
         simple:
-          "Neofy is web Spotify client that uses Spotify API and Spotify SDK to get user data and play songs on the browser",
-        complete:
-          "Neofy is web Spotify client that uses Spotify API and Spotify SDK to get user data and play songs on the browser. One cool thing about this project is that i had to implement the Spotify Authorization Flow which was a really good learning experience about authorization",
+          "Neofy is web Spotify client that uses Spotify API and Spotify SDK to play songs on the browser",
       },
-      tags: [
-        { title: "TS", bgColor: "bg-blue-600" },
-        { title: "REACT", bgColor: "bg-blue-400" },
-        { title: "NEXTJS", bgColor: "bg-neutral-600" },
-        { title: "SCSS", bgColor: "bg-pink-600" },
-        { title: "SPOTIFY API", bgColor: "bg-green-600" },
-        { title: "SPOTIFY SDK", bgColor: "bg-green-600" },
-      ],
-      screenshots: [
-        "/assets/images/screenshots/neofy/neofy-1.webp",
-        "/assets/images/screenshots/neofy/neofy-2.webp",
-      ],
+      screenshots: ["/assets/images/screenshots/neofy/neofy-1.webp"],
       sourceURL: "https://github.com/guilhermeg2k/neofy",
       previewURL: "https://neofy.vercel.app/",
     },
@@ -112,15 +90,7 @@ export default {
       year: "2021",
       description: {
         simple: "This is a clone of the Spotify landing page",
-        complete:
-          "This is a clone of the Spotify landing page. My main goal with this project was to improve my css skills and it was a great experience because i learned a lot.",
       },
-      tags: [
-        { title: "TS", bgColor: "bg-blue-600" },
-        { title: "REACT", bgColor: "bg-blue-400" },
-        { title: "CSS", bgColor: "bg-blue-500" },
-        { title: "REACT-ROUTER", bgColor: "bg-red-600" },
-      ],
       screenshots: [
         "/assets/images/screenshots/spotify-clone/spotify-clone-1.webp",
       ],
@@ -129,12 +99,10 @@ export default {
     },
     {
       id: 6,
-      title: "hltv clone",
+      title: "HLTV clone",
       year: "2020",
       description: {
         simple: "This is a clone of HLTV.org desktop home page",
-        complete:
-          "This is a clone of hltv.org desktop home page. I really enjoy playing CSGO so i thought it would be fun to made a clone of this website which is the biggest competitive news portal of the game.",
       },
       screenshots: ["/assets/images/screenshots/hltv-clone/hltv-clone-1.webp"],
       sourceURL: "https://github.com/guilhermeg2k/hltv-clone",
@@ -153,31 +121,6 @@ export default {
       sourceURL: "https://github.com/guilhermeg2k/blog-template",
       previewURL: "https://blog-template-guilhermeg2k.vercel.app/",
     },
-    {
-      id: 4,
-      title: "Mercury",
-      year: "2022",
-      description: {
-        simple: "Mercury is a really simple CI/CD web platform",
-      },
-      tags: [
-        { title: "TS", bgColor: "bg-blue-600" },
-        { title: "REACT", bgColor: "bg-blue-400" },
-        { title: "NEXTJS", bgColor: "bg-neutral-600" },
-        { title: "MATERIAL-UI", bgColor: "bg-sky-800" },
-        { title: "NODEJS", bgColor: "bg-emerald-600" },
-        { title: "ExpressJS", bgColor: "bg-neutral-500" },
-        { title: "SQLITE", bgColor: "bg-sky-500" },
-        { title: "KnexJS", bgColor: "bg-orange-500" },
-      ],
-      screenshots: [
-        "/assets/images/screenshots/mercury/mercury-1.webp",
-        "/assets/images/screenshots/mercury/mercury-3.webp",
-        "/assets/images/screenshots/mercury/mercury-2.webp",
-      ],
-      sourceURL: "https://github.com/Manquit-Devs/mercury_f",
-      previewURL: null,
-    },
   ],
 
   works: [
@@ -186,7 +129,7 @@ export default {
       position: "Front-End Developer",
       dateRange: "Oct. 2021 - Currently",
       description:
-        "Desenvolvimento e otimização de interfaces, painéis e ferramentas de monitoramento para uma plataforma de inteligência geoclimática, com participação ativa em iniciativas de alto impacto, como a migração de infraestrutura da AWS para o GCP.",
+        "Development and optimization of interfaces, dashboards, and monitoring tools for a geoclimatic intelligence platform, with active involvement in high-impact initiatives such as migrating infrastructure from AWS to GCP",
       logoUrl: "/assets/images/logo/cyan.png",
       techStack: [
         "Typescript",
@@ -296,14 +239,6 @@ export default {
       link: "https://docs.google.com/document/d/1DgyIHZsbtCandU6JTtxoyhgTC7SgdDpvW0SJlWKUj1s",
     },
   ],
-
-  projectModal: {
-    button: {
-      sourceCode: "source code",
-      livePreview: "live preview",
-    },
-    year: "Project year",
-  },
 
   footer: {
     createdBy: "PAGE CREATED BY GUILHERMEG2K AND AVAILABLE ON GITHUB",

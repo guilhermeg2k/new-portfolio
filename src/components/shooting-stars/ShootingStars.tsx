@@ -1,4 +1,4 @@
-import "./ShootingStars.css"; // Make sure to create this CSS file
+import "./ShootingStars.css";
 
 const ShootingStars = () => {
   const stars = [...Array(20)];
