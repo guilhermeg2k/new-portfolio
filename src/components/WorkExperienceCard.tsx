@@ -16,7 +16,7 @@ const WorkExperienceCard = ({
   techStacks,
 }: WorkExperienceCardProps) => {
   return (
-    <li className="flex w-full flex-col gap-4 rounded-md py-3">
+    <li className="flex w-full flex-col gap-4 rounded-md">
       <div className="flex flex-col">
         <h2 className="text-2xl font-semibold">{company}</h2>
         <div>

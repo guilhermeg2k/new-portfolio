@@ -16,7 +16,7 @@ const App = () => {
       <div className="h-full w-full text-orange-100">
         <main className="mx-auto flex w-full flex-col gap-8 px-4 pt-8 md:max-w-[90rem] md:pt-16 lg:flex-row lg:gap-10 lg:pt-32">
           <Aside />
-          <div className="mt-0 flex flex-col gap-16 px-5 lg:mt-10">
+          <div className="mt-0 flex flex-col gap-8 px-5 lg:mt-10 lg:gap-20">
             <div className="flex flex-col gap-4">
               <span className="text-5xl font-semibold md:text-9xl">
                 {main.role.title}
@@ -44,7 +44,7 @@ const App = () => {
                   {titles.experience.subtitle}
                 </span>
               </div>
-              <ul className="flex flex-col gap-4 lg:max-w-2xl">
+              <ul className="flex flex-col gap-8 lg:max-w-2xl">
                 {works.map(
                   ({
                     position,
