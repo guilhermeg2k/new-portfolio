@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* html, */
-/* body { */
-/*   background-color: oklch(14.5% 0 0); */
-/* } */
+html,
+body {
+  position: relative;
+  background-color: oklch(14.5% 0 0);
+  z-index: -2;
+}

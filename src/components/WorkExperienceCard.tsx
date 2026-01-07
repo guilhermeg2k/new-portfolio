@@ -28,7 +28,7 @@ const WorkExperienceCard = ({
       <div>
         <div className="flex flex-wrap gap-1">
           {techStacks.map((tech) => (
-            <Badge>{tech}</Badge>
+            <Badge key={tech}>{tech}</Badge>
           ))}
         </div>
       </div>
