@@ -172,7 +172,8 @@ export default {
     },
     {
       title: "React",
-      iconURL: "https://cdn.worldvectorlogo.com/logos/react-1.svg",
+      iconURL:
+        "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
     },
     {
       title: "HTML",
@@ -214,7 +215,7 @@ export default {
     {
       title: "VITE",
       iconURL:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vitejs-logo.svg/410px-Vitejs-logo.svg.png",
+        "https://upload.wikimedia.org/wikipedia/commons/f/f1/Vitejs-logo.svg",
     },
     {
       title: "Zig",
@@ -243,6 +244,7 @@ export default {
   footer: {
     createdBy:
       "PÁGINA CRIADA POR GUILHERMEG2K, CÓDIGO FONTE DISPONÍVEL NO GITHUB",
-    iconsBy: "ICONES POR worldvectorlogo.com, flagicons.lipis.dev E HEROICONS",
+    iconsBy:
+      "ICONES POR wikimedia.org, worldvectorlogo.com, flagicons.lipis.dev E HEROICONS",
   },
 };
